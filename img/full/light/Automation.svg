@@ -1,0 +1,29 @@
+<svg id="Group_6517" data-name="Group 6517" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_61" data-name="Group 61">
+    <g id="Group_55" data-name="Group 55" transform="translate(56.25 59.688)">
+      <path id="Path_14" data-name="Path 14" class="cls-1" d="M61.75,103.162A43.719,43.719,0,0,1,44.875,19.1l2.5,5.625a37.5,37.5,0,1,0,28.75,0l2.5-5.625A43.719,43.719,0,0,1,61.75,103.162Z" transform="translate(-18 -19.1)"/>
+    </g>
+    <g id="Group_56" data-name="Group 56" transform="translate(96.875 59.375)">
+      <rect id="Rectangle_85" data-name="Rectangle 85" class="cls-1" width="6.25" height="40.625"/>
+    </g>
+    <g id="Group_57" data-name="Group 57">
+      <path id="Path_15" data-name="Path 15" class="cls-1" d="M100,200C45,200,0,155,0,100S45,0,100,0,200,45,200,100,155,200,100,200ZM100,6.25C48.438,6.25,6.25,48.438,6.25,100S48.438,193.75,100,193.75s93.75-42.187,93.75-93.75S151.563,6.25,100,6.25Z"/>
+    </g>
+    <g id="Group_58" data-name="Group 58" transform="translate(37.5 37.5)">
+      <path id="Path_16" data-name="Path 16" class="cls-1" d="M74.5,137A62.5,62.5,0,1,1,137,74.5,62.684,62.684,0,0,1,74.5,137Zm0-118.75A56.25,56.25,0,1,0,130.75,74.5,56.415,56.415,0,0,0,74.5,18.25Z" transform="translate(-12 -12)"/>
+    </g>
+    <g id="Group_59" data-name="Group 59" transform="translate(18.75 96.875)">
+      <rect id="Rectangle_86" data-name="Rectangle 86" class="cls-1" width="6.25" height="6.25"/>
+    </g>
+    <g id="Group_60" data-name="Group 60" transform="translate(175 96.875)">
+      <rect id="Rectangle_87" data-name="Rectangle 87" class="cls-1" width="6.25" height="6.25"/>
+    </g>
+  </g>
+</svg>

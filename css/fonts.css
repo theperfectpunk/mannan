@@ -1,0 +1,14 @@
+@font-face {
+    font-family: BinaryITC;
+    src: url(../fonts/BinaryITC.ttf);
+}
+
+@font-face {
+    font-family: BinaryITCBold;
+    src: url(../fonts/BinaryITCBold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
