@@ -266,20 +266,17 @@ section {
 }
 
 .services_tiles .col-md-2 {
-    border: 2px solid #575757;
     border-right: none;
     padding: 15px;
     cursor: pointer;
-}
-
-.services_tiles .col-md-2:last-child {
-    border-right: 2px solid #575757
+    transition: all 0.2s ease-in;
 }
 
 .services_tiles .col-md-2:hover, .services_grid .col-md-4:hover > .services_inner_container {
-    border: 2px solid #58dfb0;
     background-color: #58dfc7;
     cursor: pointer;
+    box-shadow: 4px 4px 8px #ccc;
+    transition: all 0.2s ease-in;
 }
 
 .services_tiles .col-md-2:hover > .services_image_container {
@@ -288,16 +285,7 @@ section {
 
 .services_tiles .col-md-2:hover:nth-child(odd), .services_grid .col-md-4:hover:nth-child(odd) > .services_inner_container {
     background-color: #4FCDDD !important;
-    border: 2px solid #4FCDDD;
     cursor: pointer;
-}
-
-.services_tiles .col-md-2:hover+.col-md-2 {
-    border-left: 2px solid #58dfb0;
-}
-
-.services_tiles .col-md-2:hover:nth-child(odd)+.col-md-2 {
-    border-left: 2px solid #4FCDDD;
 }
 
 .services_tiles .col-md-2:hover>.services_caption_container {
@@ -459,5 +447,5 @@ section {
 }
 
 .career_grid .col-md-6 {
-    height: 225px;
+    height: 250px;
 }
