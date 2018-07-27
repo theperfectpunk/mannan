@@ -15,35 +15,37 @@
 </head>
 
 <body onload="initScroll()">
-    <nav class="navbar navbar-light navbar-expand-lg m-auto h-5 position-fixed container" style="background-color: rgb(245,245,245)">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">
-                <img src="./img/logo-dark.png">
-            </a>
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="./index.html">HOME</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link active" href="#">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./services.html">SERVICES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CAREERS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">BLOG</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">GET IN TOUCH</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-light navbar-expand-lg m-auto h-5 position-fixed" style="background-color: rgb(245,245,245)">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="./">
+                    <img src="./img/logo-dark-nolabel.png">
+                </a>
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">HOME</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./careers.html">CAREERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">GET IN TOUCH</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <div class="p-5"></div>
@@ -52,17 +54,14 @@
             <div class="mx-auto w-75">
                 <h5 class="horizontal-headline">
                     <p>
-                        <span>Lorem</span>
+                        <span>WHAT WE DO</span>
                     </p>
                 </h5>
-                <h1 class="w-50 text-center mx-auto">
-                    Lorem ipsum dolor sit amet
+                <h1 class="w-100 text-center mx-auto">
+                    How we are different
                 </h1>
                 <p class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non libero volutpat, tristique orci vel, ullamcorper ante.
-                    Nunc et leo id mauris tincidunt scelerisque ut non mi. Integer sagittis ullamcorper lorem eu facilisis.
-                    Fusce feugiat lobortis imperdiet. Proin a turpis quis nulla sagittis maximus at vitae dui. Nulla facilisi.
-                    Curabitur vel ligula egestas, imperdiet quam in.
+                        At Mannan, we use our innate ability to listen deeply for customer-specific, industry wide challenges and technology opportunities - crafting insightful solutions that address these situations, differentiating ourselves from competitors.
                 </p>
                 <button onclick="openURL('contact.html')" class="custom-button">
                     <span>GET IN TOUCH</span>
@@ -71,7 +70,6 @@
             <div class="mx-auto">
                 <h5 class="horizontal-headline">
                     <p>
-                        <span></span>
                     </p>
                 </h5>
             </div>
@@ -80,41 +78,150 @@
     <section id="mission">
         <div class="container">
             <div class="image_card">
-                <div class="parallax-images" data-parallax="scroll" data-speed=0.8 data-image-src="/mannan/img/businessmen.jpg"></div>
+                <div class="w-85 parallax-images" data-parallax="scroll" data-speed=0.8 data-image-src="/mannan/img/businessmen.jpg"></div>
+                <div class="card shadow float-right p-5 w-35 text-white bg_dark_green" style="margin-top: -400px">
+                    <p class="content">At Mannan, we use our innate ability to listen deeply for customer-specific, industry wide challenges and technology opportunities - crafting insightful solutions that address these situations, differentiating ourselves from competitors.</p>
+                </div>
             </div>
             <div class="row mt-5">
-                <div class="col-md-2 text-center">
-                    <img src="./img/iot.png" class="ott_img_about">
-                </div>
-                <div class="col-md-10">
-                    <h1 class="text-center ott_title_left">
-                        Lorem ipsum dolor sit amet
+                <div class="col-md-7">
+                    <h1 class="text-left">
+                        Establishing Trust
                     </h1>
-                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis venenatis fringilla. Integer
-                            lacinia, lacus vitae aliquet convallis, quam ipsum molestie ipsum, eu ornare leo metus vel felis. Sed a
-                            neque fringilla, scelerisque ligula nec, aliquet ligula. Vestibulum ante ipsum primis in faucibus orci
-                            luctus et ultrices posuere cubilia Curae; Pellentesque sed facilisis sapien. Vivamus nec leo efficitur,
-                            elementum ligula ac, lacinia metus. Nunc eu lobortis ante. Suspendisse potenti. Nam ut augue eu nisl
-                            imperdiet pellentesque eu vel lacus. Donec id consequat erat. Curabitur id mi augue. Vivamus lacinia
-                            vehicula fermentum. Morbi ac turpis a urna efficitur volutpat nec a augue.</p>
+                    <p class="content">
+                    Understanding the status of a requirement, user story, ticket, MVP or project is key to in order to demonstrate knowledge and experience and ensure that the business need is actually resolved. Building on our philosophy of frequent communication in agile delivery, we take care to ensure that requirements are understood at the first time of asking and delivered to the quality our clients expect.
+                    </p>
+                    <p class="content mt-3">
+                    No two engagements are ever the same. Different technologies, different cultures and different constraints will all drive how the delivery process works. Whether your process is scrum, kanban or another methodology; whether continuous integration is your standard mode of operation or it’s a combination of all of the above, there are a number of factors that are taken into consideration when our recommendations are made. This enables us to tailor solutions to fit into our clients needs and environments.
+                    </p>
+                </div>
+                <div class="col-md-5 right_trust">
+                    <div class="row py-3">
+                        <div class="col-md-3">
+                            <img src="./img/Insightful solutioning.png" width="100%">                                
+                        </div>
+                        <div class="col-md-9">
+                            <h4>Insightful solutioning</h4>
+                            <p class="content">Customised propositions address business and IT challenges</p>
+                        </div>
+                    </div>
+                    <div class="row py-3">
+                        <div class="col-md-3">
+                            <img src="./img/Ongoing collaboration.png" width="100%">                                    
+                        </div>
+                        <div class="col-md-9">
+                            <h4>Ongoing collaboration</h4>
+                            <p class="content">Building long-term customer engagements</p>
+                        </div>
+                    </div>
+                    <div class="row py-3">
+                        <div class="col-md-3">
+                            <img src="./img/Pressure-tested project management.png" width="100%">
+                        </div>
+                        <div class="col-md-9">
+                            <h4>Pressure-tested project manangement</h4>
+                            <p class="content">Iterative agile processes enable quick business outcomes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <div class="row my-3">
+                        <div class="col-md-6 about_grid_image">
+                            <img src="./img/about-grid/Software Development.png">
+                            <h5 class="mt-2">Software<br />Development</h5>
+                        </div>
+                        <div class="col-md-6 about_grid_image">
+                            <img src="./img/about-grid/Digital Transformation.png">
+                            <h5 class="mt-2">Digital<br />Transformation</h5>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-md-6 about_grid_image">
+                            <img src="./img/about-grid/QA-Automation.png">
+                            <h5 class="mt-2">QA/Automation</h5>
+                        </div>
+                        <div class="col-md-6 about_grid_image">
+                            <img src="./img/about-grid/Devops.png">
+                            <h5 class="mt-2">Devops</h5>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-md-6 about_grid_image">
+                            <img src="./img/about-grid/Cloud.png">
+                            <h5 class="mt-2">Cloud</h5>
+                        </div>
+                        <div class="col-md-6 about_grid_image">
+                            <img src="./img/about-grid/Agile.png">
+                            <h5 class="mt-2">Agile</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center px-0">
+                    <div class="accordion w-100" id="about_accordion">
+                        <div class="card">
+                            <div class="card-header bg_dark_green" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link accordion_button" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Our Delivery process
+                                </button>
+                            </h2>
+                            </div>
+                        
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#about_accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header bg_dark_green" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link accordion_button collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Agile Development
+                                </button>
+                            </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#about_accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header bg_dark_green" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link accordion_button collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Team Skills
+                                </button>
+                            </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#about_accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                            </div>
+                        </div>
+                        </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="footer">
+    <section id="footer" class="pb-0">
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-9">
                     <div class="footer_logo">
-                        <img src="./img/logo-light.png" width="100%">
-                    </div>
-                </div>
-                <div class="col-md-7 footer_middle">
-                    <div class="text_wrapper">
-                        <p class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis aliquam ex. Nunc dapibus accumsan tellus, vitae dictum
-                            augue pharetra sagittis. Vivamus quis ex leo. Nulla finibus dui ut urna iaculis vehicula.
-                        </p>
+                        <img src="./img/manna-nolabel-light.png">
+                        <div class="text_wrapper">
+                            <p class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis aliquam ex. Nunc dapibus accumsan tellus, vitae dictum
+                                augue pharetra sagittis. Vivamus quis ex leo. Nulla finibus dui ut urna iaculis vehicula.
+                            </p>
+                            <p>Call Us</p>
+                            <p>+91 11 413 204 08</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -128,16 +235,13 @@
             </div>
         </div>
     </section>
-    <section id="copyright">
+    <div class="bg_black">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 footer_text">
-                    <p>Mannan.ai . All Rights Reserved</p>
-                    <p onclick="scrollToTop()">Top</p>
-                </div>
+            <div class="footer_text">
+                <p class="content">Mannan.ai . All Rights Reserved</p>
             </div>
         </div>
-    </section>
+    </div>
 </body>
 <script src="./js/typed.min.js"></script>
 <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

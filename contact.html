@@ -12,128 +12,145 @@
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/responsive.css">
         <link rel="stylesheet" href="./bower_components/wow/css/libs/animate.css">
+        <link rel="stylesheet" href="./css/material-design-input.css">
     </head>
 
     <body onload="initScroll()">
-        <nav class="navbar navbar-light navbar-expand-lg m-auto h-5 position-fixed container" style="background-color: rgb(245,245,245)">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#">
-                    <img src="./img/logo-dark.png">
-                </a>
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./about.html">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./services.html">SERVICES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CAREERS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">BLOG</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link active" href="#">GET IN TOUCH</a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-light navbar-expand-lg m-auto h-5 position-fixed" style="background-color: rgb(245,245,245)">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="./">
+                        <img src="./img/logo-dark-nolabel.png">
+                    </a>
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./careers.html">CAREERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#">GET IN TOUCH</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <div class="p-5"></div>
-        <section id="about_us">
+        <section id="contact_hero">
             <div class="container">
-                <div class="mx-auto w-75">
-                    <h5 class="horizontal-headline">
-                        <p>
-                            <span>Lorem</span>
-                        </p>
-                    </h5>
-                    <h1 class="w-50 text-center mx-auto">
-                        Lorem ipsum dolor sit amet
-                    </h1>
-                    <p class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non libero volutpat, tristique orci vel, ullamcorper ante.
-                        Nunc et leo id mauris tincidunt scelerisque ut non mi. Integer sagittis ullamcorper lorem eu facilisis.
-                        Fusce feugiat lobortis imperdiet. Proin a turpis quis nulla sagittis maximus at vitae dui. Nulla facilisi.
-                        Curabitur vel ligula egestas, imperdiet quam in.
-                    </p>
-                    <button onclick="openURL('about.html')" class="custom-button">
-                        <span>ABOUT US</span>
-                    </button>
-                </div>
-                <div class="mx-auto">
-                    <h5 class="horizontal-headline">
-                        <p>
-                            <span></span>
-                        </p>
-                    </h5>
+                <div class="row">
+                    <div class="col-md-8 bg_white">
+                        <img src="./img/businessmen.jpg" width="100%">
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center px-0">
+                        <img src="./img/map.png" width="100%">
+                    </div>
                 </div>
             </div>
         </section>
         <section id="contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
-                        <h2>Get in touch with us!</h2>
+                    <div class="col-md-8 p-5 bg_white">
+                        <h2 class="my-3">Get in touch with us!</h2>
                         <form id="contactform">
-                            <div class="form-group">
-                                <input class="form-control" type="text" name="name" placeholder="Name">
+                            <div class="group">      
+                                <input type="text" id="apply_name" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Name</label>
                             </div>
-                            <div class="form-group">
-                                <input class="form-control" type="text" name="c_name" placeholder="Company Name">
+                                
+                            <div class="group">      
+                                <input type="text" id="apply_cname" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Company Name</label>
                             </div>
-                            <div class="form-group">
-                                <input class="form-control" type="tel" name="phone" placeholder="Phone">
+
+                            <div class="group">      
+                                <input type="tel" id="apply_phone" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Phone</label>
                             </div>
-                            <div class="form-group">
-                                <input class="form-control"  name="name" placeholder="Email">
+
+                            <div class="group">      
+                                <input type="email" id="apply_email" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Email</label>
                             </div>
-                            <div class="form-group">
-                                <textarea class="form-control" rows="3" name="address" placeholder="Address"></textarea>
-                            </div>
+
                             <button class="custom-button w-100" style="max-width: unset;">SEND MESSAGE</button>
                         </form>
                     </div>
                     <div class="col-md-4">
-                        <h2>Talk to us</h2>
-                        <p class="content">
+                        <h2 class="my-3">Talk to us</h2>
+                        <p class="content my-4">
                             We really like talking to people. Talking about
                             ideas, innovation, design, technology and
                             inspiration. Talking about everything.
                         </p>
-                        <p class="content">
+                        <p class="content my-4">
                             hello@mannan.ai
-                            WORK WITH US
                         </p>
-                        <p class="content">
-
+                        <p class="content my-4">
+                            WORK WITH US
+                            Let's work together. Hire us!
+                            hr@mannan.ai
+                        </p>
+                        <p class="content my-4">
+                            COME TO SEE US
+                            Mannan Impex Pvt. Ltd.
+                            D-147, Okhla Ph1,
+                            Delhi - 110035
+                        </p>
+                        <p class="content my-4">
+                            +91 0 45896545
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="footer">
+        <section id="footer" class="pb-0">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-7">
                         <div class="footer_logo">
-                            <img src="./img/logo-light.png" width="100%">
+                            <img src="./img/manna-nolabel-light.png">
+                            <div class="text_wrapper">
+                                <p class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis aliquam ex. Nunc dapibus accumsan tellus, vitae dictum
+                                    augue pharetra sagittis. Vivamus quis ex leo. Nulla finibus dui ut urna iaculis vehicula.
+                                </p>
+                                <p>Call Us</p>
+                                <p>+91 11 413 204 08</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-7 footer_middle">
-                        <div class="text_wrapper">
-                            <p class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis aliquam ex. Nunc dapibus accumsan tellus, vitae dictum
-                                augue pharetra sagittis. Vivamus quis ex leo. Nulla finibus dui ut urna iaculis vehicula.
-                            </p>
-                        </div>
+                    <div class="col-md-2 footer_middle">
+                        <p>Explore</p>
+                        <ul class="custom-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="careers.html">Career</a></li>
+                            <li><a href="contact.html">Get In Touch</a></li>
+                        </ul>
                     </div>
                     <div class="col-md-3">
                         <p class="footer_caption">We Are Social</p>
@@ -146,16 +163,13 @@
                 </div>
             </div>
         </section>
-        <section id="copyright">
+        <div class="bg_black">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12 footer_text">
-                        <p>Mannan.ai . All Rights Reserved</p>
-                        <p onclick="scrollToTop()">Top</p>
-                    </div>
+                <div class="footer_text">
+                    <p class="content">Mannan.ai . All Rights Reserved</p>
                 </div>
             </div>
-        </section>
+        </div>
     </body>
     <script src="./js/typed.min.js"></script>
     <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

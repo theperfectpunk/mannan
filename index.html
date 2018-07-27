@@ -10,40 +10,43 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-bootstrap.css">
     <link rel="stylesheet" href="./bower_components/aos/dist/aos.css">
     <link rel="stylesheet" href="./bower_components/wow/css/libs/animate.css">
 </head>
 
 <body onload="initScroll()" onscroll="bodyScroll()">
-    <nav class="navbar navbar-dark navbar-expand-lg m-auto h-5 position-fixed container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mannanNavBar" aria-controls="mannanNavBar"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mannanNavBar">
-            <a class="navbar-brand" href="#">
-                <img src="./img/logo-light.png">
-            </a>
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 homenav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./about.html">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./services.html">SERVICES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CAREERS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">BLOG</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">GET IN TOUCH</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-dark navbar-expand-lg m-auto h-5 position-fixed" style="box-shadow: none;">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mannanNavBar" aria-controls="mannanNavBar"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mannanNavBar">
+                <a class="navbar-brand" href="./">
+                    <img src="./img/logo-light.png">
+                </a>
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 homenav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./careers.html">CAREERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">GET IN TOUCH</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <header style="overflow: hidden;">
@@ -53,12 +56,11 @@
             </video>
         </div>
         <div class="caption-hero">
-            <div class="caption_wrapper w-25">
-                <h1 id="caption_heading">Lorem ipsum dolor sit amet,</h1>
-                <p class="content">
+            <div class="caption_wrapper w-sm-100 w-md-50">
+                <h1 id="caption_heading">Formalising Innovation</h1>
+                <p class="content w-md-50 w-sm-100 mx-auto">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non libero volutpat, tristique orci vel, ullamcorper ante.
-                    Nunc et leo id mauris tincidunt scelerisque ut non mi. Integer sagittis ullamcorper lorem eu facilisis.
-                    Fusce feugiat lobortis imperdiet. Proin a turpis quis nulla.
+                    Nunc et leo id mauris tincidunt scelerisque ut non mi.
                 </p>
                 <button onclick="openURL('contact.html')" class="hero-button">
                     <span>GET IN TOUCH</span>
@@ -67,101 +69,57 @@
         </div>
         <div class="caption-hero scrollme" style="overflow: hidden; align-items: flex-end">
             <div id="mannan_svg" class="animateme" data-when="span" data-from="1" data-to="0" data-opacity="1" data-translatey="500">
-                    <svg
-                        xmlns:dc="http://purl.org/dc/elements/1.1/"
-                        xmlns:cc="http://creativecommons.org/ns#"
-                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                        xmlns:svg="http://www.w3.org/2000/svg"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                        viewBox="0 0 1920.5 829.569"
-                        version="1.1"
-                        id="svg7"
-                        sodipodi:docname="mannan.svg"
-                        inkscape:version="0.92.3 (2405546, 2018-03-11)">
-                        <metadata
-                            id="metadata11">
-                            <rdf:RDF>
-                            <cc:Work
-                                rdf:about="">
-                                <dc:format>image/svg+xml</dc:format>
-                                <dc:type
-                                rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-                            </cc:Work>
-                            </rdf:RDF>
-                        </metadata>
-                        <sodipodi:namedview
-                            pagecolor="#ffffff"
-                            bordercolor="#666666"
-                            borderopacity="1"
-                            objecttolerance="10"
-                            gridtolerance="10"
-                            guidetolerance="10"
-                            inkscape:pageopacity="0"
-                            inkscape:pageshadow="2"
-                            inkscape:window-width="1920"
-                            inkscape:window-height="1025"
-                            id="namedview9"
-                            showgrid="false"
-                            inkscape:zoom="1.0073648"
-                            inkscape:cx="1305.9287"
-                            inkscape:cy="255.95425"
-                            inkscape:window-x="0"
-                            inkscape:window-y="27"
-                            inkscape:window-maximized="1"
-                            inkscape:current-layer="svg7" />
-                        <defs
-                            id="defs4">
-                            <style id="style2">
-                                .cls-1 {
-                                fill: #f5f5f5;
-                                }
-                            </style>
-                        </defs>
-                        <path
-                            id="Union_1"
-                            data-name="Union 1"
-                            class="cls-1"
-                            d="m 0.1164971,831.10598 v -82.62364 l -0.5,-0.159 v -50.47 c 4.076,-1.719 7.9599999,-6.678 11.8789999,-15.166 7.729,-17.776 14.785,-35.809 20.972,-53.591 5.485,-16.173 10.815,-32.524 15.971,-48.338 l 0.182,-0.559 0.007,-0.023 c 8.665,-26.591 17.626,-54.085 27.336,-80.794 6.084921,-17.92425 13.317548,-35.43814 21.653003,-52.433 4.376,-8.752 9.03599,-17.055 13.84999,-24.686 5.04282,-8.02067 10.56694,-15.72846 16.542,-23.081 11.625,-14.121 23.47,-24.95 36.213,-33.108 6.79782,-4.36406 14.02489,-8.02015 21.568,-10.911 7.93421,-3.01226 16.1636,-5.18055 24.552,-6.469 6.25453,-1.03788 12.58394,-1.55864 18.924,-1.557 5.30649,0.007 10.60705,0.35491 15.869,1.041 5.25917,0.68989 10.47466,1.6795 15.621,2.964 10.42785,2.65397 20.59168,6.25424 30.365,10.756 10.7867,5.21065 21.24726,11.07109 31.324,17.549 9.9749,6.42222 19.58105,13.39989 28.773,20.9 9.16623,7.48419 17.94432,15.43154 26.3,23.811 8.19,8.2 16.228,17.044 23.9,26.286 13.2,15.762 26.171,32.519 38.709,48.725 l 0.075,0.1 0.041,0.052 0.021,0.027 c 10.3,13.316 20.954,27.087 31.837,40.425 13.027,15.326 26.877,30.744 41.164,45.826 2.992,3.587 6.895,6.251 11.027,9.068 h 0.007 c 1.146,0.78 2.443,1.664 3.726,2.58 4.57734,3.06814 9.51048,5.56879 14.691,7.447 4.48227,1.61034 9.20344,2.45546 13.966,2.5 11.225,0 21.92,-5.03 32.7,-15.38 5.17752,-4.99958 10.07244,-10.28377 14.662,-15.828 4.335,-5.212 8.559,-10.77 12.912,-16.989 8.224,-11.752 15.532,-23.882 22.916,-36.311 7.467,-12.343 14.9,-25 22.095,-37.232 l 0.227,-0.386 v 0 c 9.877,-16.807 20.088,-34.188 30.492,-50.925 8.181,-12.727 15.8,-22.89 23.3,-31.069 8.08024,-9.73237 17.18245,-18.56872 27.15,-26.357 9.37255,-7.27515 19.55685,-13.43929 30.349,-18.369 10.66501,-4.82806 21.84164,-8.43496 33.317,-10.752 11.87018,-2.36849 23.9479,-3.54102 36.052,-3.5 8.47838,0.0149 16.94894,0.51571 25.37,1.5 9.411,1.046 18.911,2.575 28.235,4.549 9,1.9 18.119,4.285 27.1,7.079 8.661,2.694 17.428,5.846 26.059,9.372 8.313,3.394 16.765,7.24 25.121,11.427 8.006,4.019 16.175,8.477 24.28201,13.252 7.688,4.528 15.609,9.52 23.545,14.832 14.555,9.749 29.367,20.7 45.283,33.472 11.639,9.345 23.154,19.26 35.209,30.31 10.75,9.861 21.665,20.392 33.376,32.192 21.777,21.952 43.124,45.151 63.767,67.587 l 0.059,0.064 c 5.107,5.553 11.464,12.461 17.5,18.981 34.146,36.47 69.686,72.795 105.635,107.965 12.7195,12.55997 26.4034,24.10428 40.926,34.527 7.1,5.08 14.464,9.9 21.881,14.339 7.4,4.426 15.083,8.6 22.829,12.4 7.746,3.8 15.742,7.319 23.775,10.468 8.033,3.149 16.346,6.024 24.72,8.549 17.112,5.11987 34.5912,8.92099 52.284,11.37 10.289,1.441 20.557,2.539 30.518,3.264 10.181,0.741 20.333,1.118 30.173,1.118 13.8933,0.0113 27.7765,-0.75157 41.585,-2.285 13.7304,-1.53625 27.3552,-3.90157 40.8,-7.083 13.5711,-3.22694 26.9233,-7.31318 39.976,-12.234 13.396,-5.06772 26.4526,-10.99092 39.089,-17.733 13.2384,-7.11261 25.9532,-15.15931 38.048,-24.079 11.9233,-8.8165 23.2467,-18.41671 33.895,-28.737 10.6383,-10.32894 20.6454,-21.28875 29.967,-32.82 9.3891,-11.62921 18.1516,-23.75075 26.25,-36.313 17.763,-27 33.047,-56.18 47.829,-84.4 v 0 l 0.011,-0.018 0.316,-0.6 c 0.291,-0.557 0.6,-1.141 0.911,-1.743 0.957,-1.825 2.01,-3.835 2.967,-5.656 2.712,-5.09 5.174,-8.4 7.977,-10.738 v 172.068 c -0.3333,0.4 -0.6667,0.80233 -1,1.207 v 129.55464 z"
-                            inkscape:connector-curvature="0"
-                            style="fill:#f5f5f5"
-                            sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccssccccccccccccccccccccccc" />
-                    </svg>                                    
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1922.513 432.853">
+                    <defs>
+                        <style>
+                        .cls-1 {
+                            fill: #f5f5f5;
+                        }
+                    
+                        .cls-2 {
+                            fill: none;
+                            stroke: #13aee2;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-miterlimit: 10;
+                            stroke-width: 5px;
+                        }
+                        </style>
+                    </defs>
+                    <g id="Group_6681" data-name="Group 6681" transform="translate(1.417 -760.798)">
+                        <g id="Group_6613" data-name="Group 6613" transform="translate(-0.053 764.596)">
+                        <path id="Path_2" data-name="Path 2" class="cls-1" d="M9.227,431.06c.044-.014.037-165.248,0-165.25a28.147,28.147,0,0,1,4.751-.612c28.6-.733,53.527,7.333,68.926,33l17.6,26.4c12.465,16.865,21.264,16.132,30.063-2.933q11-25.3,19.8-50.594c13.932-41.062,26.4-82.124,41.062-122.453,11.732-33.73,26.4-66.726,49.128-94.59,20.531-24.931,44.728-42.529,77.725-47.661,26.4-4.4,52.061,1.467,76.258,12.465,41.062,19.8,75.525,49.128,104.122,83.591,22.731,27.13,44,56.46,66.726,84.324,12.465,14.665,25.664,29.33,38.862,43.262,3.666,4.4,8.8,7.333,13.932,11,21.264,13.932,39.6,12.465,57.927-5.133,19.8-19.065,33.73-41.8,47.661-65.26,16.865-27.864,33-56.46,49.861-83.591a218.6,218.6,0,0,1,22-29.33c37.4-44.728,86.524-60.86,143.718-54.261,72.592,8.066,132.719,44,188.446,88.724,52.061,41.8,96.056,91.657,141.518,140.785,32.263,34.463,65.993,68.926,99.722,101.922,49.128,48.395,107.788,76.992,175.981,86.524,73.325,10.266,143.718,2.2,209.71-33,50.594-27.13,90.19-67.459,120.987-115.121,18.331-27.864,33.73-57.927,49.128-87.257a46.776,46.776,0,0,1,4.193-6.634c.32-.053.2,251.6.031,251.424C1929.2,430.258,9.284,431.116,9.227,431.06Z" transform="translate(-9.227 -2.006)"/>
+                        </g>
+                        <path id="Path_2_2_" class="cls-2" d="M11.253,263.9c.715-.116,1.794-.231,2.944-.3,28.5-.792,53.429,7.52,68.865,32.849l17.414,26.517c12.269,17.018,21.372,16.227,30.079-2.77,7.52-17.018,13.852-33.641,19.789-50.659,13.852-41.16,26.517-81.925,41.16-122.294,11.873-33.641,26.517-66.886,49.076-94.59C261.159,27.718,285.3,10.3,318.15,5.159,344.667.41,370.393,6.346,394.535,17.428a314.369,314.369,0,0,1,104.088,83.508c22.559,27.308,43.931,56.6,66.886,84.3,12.269,14.644,25.725,29.287,38.786,43.139a74.05,74.05,0,0,0,13.852,11.082c21.372,13.852,39.577,12.269,57.783-5.145,19.789-19,33.641-41.952,47.493-65.3,17.018-27.7,32.849-56.6,49.867-83.508a196.407,196.407,0,0,1,22.163-29.287c37.2-44.722,86.674-60.949,143.666-54.221,72.427,7.915,132.584,43.931,188.388,88.653,52.242,41.952,96.173,91.819,141.687,140.9,32.453,34.432,66.094,68.865,99.735,102.109a304.316,304.316,0,0,0,176.119,86.674c73.218,10.29,143.666,2.375,209.76-32.849,50.659-27.308,90.236-67.282,121.107-115.17,18.206-27.7,33.641-57.783,49.076-87.07a48.62,48.62,0,0,1,3.775-6.05" transform="translate(-10.17 762.798)"/>
+                    </g>
+                </svg>
+                                                        
             </div>
         </div>
     </header>
     <section id="about_us">
         <div class="container">
-            <div class="mx-auto">
-                <h5 class="horizontal-headline">
+            <div class="mx-auto mb-5">
+                <h5 class="horizontal-headline w-65 mx-auto">
                     <p>
-                        <span>Lorem</span>
+                        <span>WE SEE BEYOND WHAT OTHERS SEE</span>
                     </p>
                 </h5>
-                <h1>
-                    Lorem ipsum dolor sit amet
+                <h1 class="w-60 w-sm-100 mx-auto">
+                    Bring ideas to life
                 </h1>
-                <p class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non libero volutpat, tristique orci vel, ullamcorper ante.
-                    Nunc et leo id mauris tincidunt scelerisque ut non mi. Integer sagittis ullamcorper lorem eu facilisis.
-                    Fusce feugiat lobortis imperdiet. Proin a turpis quis nulla sagittis maximus at vitae dui. Nulla facilisi.
-                    Curabitur vel ligula egestas, imperdiet quam in.
+                <p class="content w-60 mx-auto">
+                    At Mannan.ai, we are dedicated towards delivering high quality software to manage your media. We help our clients see possibilities beyond what they can see themselves. While working with elite brands, we help them dream bigger dreams. We prove to them that their restrictions are nothing but an illusion.
+                    We believe in a direct and efficiency driven attitude towards delivering services. This approach has enabled us to build our business on the basis of positive referrals from our clients. Delivering on time and high quality products are principles that are installed into every member of Mannan. We retain outstanding talent, make work fun. To clients, we show the benefits of working with a highly skilled, happy and exceptional team.
                 </p>
-                <button onclick="reportScrollPos()" class="custom-button">
-                    <span>ABOUT US</span>
-                </button>
             </div>
             <div class="image_card">
                 <div class="parallax-images" data-speed=0.8 data-parallax="scroll" data-image-src="/mannan/img/income.jpg"></div>
                     <div class="scrollme">
-                        <div class="card shadow ml-5 p-4 float-left animateme" style="width: 24rem; transform: translate3d(0,-50px,0);" data-when="enter" data-from="1" data-to="0" data-opacity="1" data-translatey="-50">
+                        <div class="card bg_dark_green shadow text-white ml-5 p-4 float-left animateme" style="width: 24rem; margin-top: -350px; transform: translate3d(0, 50px,0);" data-when="enter" data-from="1" data-to="0" data-opacity="1" data-translatey="50">
                             <h2 class="card-title text-left">Mission</h5>
-                            <p class="card-text text-left">At Mannan.ai, we are renowned for our direct, no-nonsense attitude to delivery and this successful
-                                approach has enabled us to build our business on the basis of positive referrals from IT leaders.
-                                Our unique culture has been honed since the company’s establishment. Delivering high quality
-                                software output is a key principle embedded into every single member of the Mannan team, ensuring
-                                we on-board and retains exceptional talent.
+                            <p class="card-text text-left">At Mannan.ai, we are renowned for our direct, no-nonsense attitude to delivery and this successful approach has enabled us to build our business on the basis of positive referrals from IT leaders. Delivering high quality software output is a key principle embedded into every single member of the Mannan team, ensuring we on-board and retains exceptional talent.
+                                Commitment to do the right thing and be prepared to go the extra mile to make it happen has been the foundation which our family has and will always be stand upon.
                             </p>
                         </div>
                     </div>
@@ -173,19 +131,18 @@
         <div class="container">
             <h5 class="horizontal-headline">
                 <p>
-                    <span>Lorem</span>
+                    <span>AREAS OF EXPLORATION</span>
                 </p>
             </h5>
             <div class="row services_content">
-                <div class="col-md-4">
-                    <h1>Lorem ipsum dolor sit amet,</h1>
+                <div class="col-md-4 align-items-center">
+                    <h1>Services</h1>
                 </div>
-                <div class="col-md-8 d-flex align-items-center">
+                <div class="col-md-8">
                     <p class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non libero volutpat, tristique orci vel, ullamcorper ante.
-                        Nunc et leo id mauris tincidunt scelerisque ut non mi. Integer sagittis ullamcorper lorem eu facilisis.
-                        Fusce feugiat lobortis imperdiet. Proin a turpis quis nulla sagittis maximus at vitae dui. Nulla
-                        facilisi. Curabitur vel ligula egestas, imperdiet quam in.
+                        We create world-class digital experiences that blow the doors off expectations and establish brands as category leaders.
+                        Mannan.ai develop technologies for Smart Homes/Hotels/Offices.
+                        Mannan.ai design and develop content management systems, software and hardware for media                            
                     </p>
                 </div>
             </div>
@@ -193,56 +150,92 @@
                 <div class="col-md-2">
                     <div class="services_image_container" onclick="openURL('services-data.html')">
                         <img src="./img/data.svg">
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
                     </div>
                     <div class="services_caption_container">
-                        <h3>Open Data</h3>
+                        <h5>Open Data<br />Platform</h5>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="services_image_container" onclick="openURL('services-automation.html')">
                         <img src="./img/automation.svg">
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
                     </div>
                     <div class="services_caption_container">
-                        <h3>Automation</h3>
+                        <h5>Automation<br />Platform</h5>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="services_image_container" onclick="openURL('services-iot.html')">
                         <img src="./img/iot.svg">
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
                     </div>
                     <div class="services_caption_container">
-                        <h3>IoT/Devices</h3>
+                        <h5>IoT/Devices<br />Platform</h5>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="services_image_container" onclick="openURL('services-mobile.html')">
                         <img src="./img/mobile.svg">
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
                     </div>
                     <div class="services_caption_container">
-                        <h3>Mobile</h3>
+                        <h5>Mobile<br />Platform</h5>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="services_image_container" onclick="openURL('services-strategy.html')">
                         <img src="./img/design.svg">
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
                     </div>
                     <div class="services_caption_container">
-                        <h3>Strategic</h3>
+                        <h5>Strategic<br />Platform</h5>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="services_image_container" onclick="openURL('services-ott.html')">
                         <img src="./img/api.svg">
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
                     </div>
                     <div class="services_caption_container">
-                        <h3>OTT</h3>
+                        <h5>OTT<br />Platform</h5>
                     </div>
                 </div>
             </div>
 
             <h5 class="horizontal-headline">
                 <p>
-                    <span></span>
+                    
                 </p>
             </h5>
         </div>
@@ -252,7 +245,7 @@
             <div class="image_card">
                 <div class="parallax-images" data-parallax="scroll" data-speed=0.8 data-image-src="/mannan/img/businessmen.jpg"></div>
                 <div class="scrollme">
-                    <div class="card shadow mr-5 p-4 float-right animateme" style="width: 24rem; transform: translate3d(0,-50px,0);" data-when="enter" data-from="1" data-to="0" data-opacity="1" data-translatey="-50">
+                    <div class="card shadow mr-5 p-4 bg_dark_green text-white float-right animateme" style="width: 24rem; transform: translate3d(0,50px,0);" data-when="enter" data-from="1" data-to="0" data-opacity="1" data-translatey="50">
                         <h2 class="card-title text-right">We are the future</h2>
                         <p class="card-text text-right">Our process lead to innovation We have been bringing the innovation through our processes and we
                             have no intention to slow down. We are dreamers, we are builders, and we are artists and engineers.
@@ -268,21 +261,18 @@
     <section id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-9">
                     <div class="footer_logo">
-                        <img src="./img/logo-light.png">
-                    </div>
-                </div>
-                <div class="col-md-7 footer_middle">
-                    <div class="text_wrapper">
-                        <p class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis aliquam ex. Nunc dapibus accumsan tellus, vitae dictum
-                            augue pharetra sagittis. Vivamus quis ex leo. Nulla finibus dui ut urna iaculis vehicula.
-                        </p>
+                        <img src="./img/Footer Logo.png">
+                        <div class="text_wrapper">
+                            <p class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis aliquam ex. Nunc dapibus accumsan tellus, vitae dictum
+                                augue pharetra sagittis. Vivamus quis ex leo. Nulla finibus dui ut urna iaculis vehicula.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <p class="footer_caption">We Are Social</p>
                     <p class="footer_social">
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-linkedin-in"></i>
@@ -292,16 +282,13 @@
             </div>
         </div>
     </section>
-    <section id="copyright">
+    <div class="bg_black">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 footer_text">
-                    <p>Mannan.ai . All Rights Reserved</p>
-                    <p onclick="scrollToTop()">Top</p>
-                </div>
+            <div class="footer_text">
+                <p class="content">Mannan.ai . All Rights Reserved</p>
             </div>
         </div>
-    </section>
+    </div>
 </body>
 <script src="./js/typed.min.js"></script>
 <script src="./bower_components/aos/dist/aos.js"></script>

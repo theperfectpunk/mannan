@@ -15,35 +15,37 @@
     </head>
 
     <body onload="initScroll()">
-        <nav class="navbar navbar-light navbar-expand-lg m-auto h-5 position-fixed container" style="background-color: rgb(245,245,245)">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#">
-                    <img src="./img/logo-dark.png">
-                </a>
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./about.html">ABOUT</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./services.html">SERVICES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CAREERS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">BLOG</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">GET IN TOUCH</a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-light navbar-expand-lg m-auto h-5 position-fixed" style="background-color: rgb(245,245,245)">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="./">
+                        <img src="./img/logo-dark-nolabel.png">
+                    </a>
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./services.html">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./careers.html">CAREERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">GET IN TOUCH</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <div class="p-5 bg_green"></div>
@@ -113,56 +115,92 @@
                     <div class="col-md-2">
                         <div class="services_image_container" onclick="openURL('services-data.html')">
                             <img src="./img/data.svg">
+                            <div class="corners">
+                                <div class="corner_l-t"></div>
+                                <div class="corner_r-t"></div>
+                                <div class="corner_l-b"></div>
+                                <div class="corner_r-b"></div>
+                            </div>
                         </div>
                         <div class="services_caption_container">
-                            <h3>Open Data</h3>
+                            <h5>Open Data<br />Platform</h5>
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="services_image_container" onclick="openURL('services-automation.html')">
                             <img src="./img/automation.svg">
+                            <div class="corners">
+                                <div class="corner_l-t"></div>
+                                <div class="corner_r-t"></div>
+                                <div class="corner_l-b"></div>
+                                <div class="corner_r-b"></div>
+                            </div>
                         </div>
                         <div class="services_caption_container">
-                            <h3>Automation</h3>
+                            <h5>Automation<br />Platform</h5>
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="services_image_container" onclick="openURL('services-iot.html')">
                             <img src="./img/iot.svg">
+                            <div class="corners">
+                                <div class="corner_l-t"></div>
+                                <div class="corner_r-t"></div>
+                                <div class="corner_l-b"></div>
+                                <div class="corner_r-b"></div>
+                            </div>
                         </div>
                         <div class="services_caption_container">
-                            <h3>IoT/Devices</h3>
+                            <h5>IoT/Devices<br />Platform</h5>
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="services_image_container" onclick="openURL('services-mobile.html')">
                             <img src="./img/mobile.svg">
+                            <div class="corners">
+                                <div class="corner_l-t"></div>
+                                <div class="corner_r-t"></div>
+                                <div class="corner_l-b"></div>
+                                <div class="corner_r-b"></div>
+                            </div>
                         </div>
                         <div class="services_caption_container">
-                            <h3>Mobile</h3>
+                            <h5>Mobile<br />Platform</h5>
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="services_image_container" onclick="openURL('services-strategy.html')">
                             <img src="./img/design.svg">
+                            <div class="corners">
+                                <div class="corner_l-t"></div>
+                                <div class="corner_r-t"></div>
+                                <div class="corner_l-b"></div>
+                                <div class="corner_r-b"></div>
+                            </div>
                         </div>
                         <div class="services_caption_container">
-                            <h3>Strategic</h3>
+                            <h5>Strategic<br />Platform</h5>
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="services_image_container" onclick="openURL('services-ott.html')">
                             <img src="./img/api.svg">
+                            <div class="corners">
+                                <div class="corner_l-t"></div>
+                                <div class="corner_r-t"></div>
+                                <div class="corner_l-b"></div>
+                                <div class="corner_r-b"></div>
+                            </div>
                         </div>
                         <div class="services_caption_container">
-                            <h3>OTT</h3>
+                            <h5>OTT<br />Platform</h5>
                         </div>
                     </div>
                 </div>
     
                 <h5 class="horizontal-headline">
                     <p>
-                        <span></span>
+                        
                     </p>
                 </h5>
                 <h4 style="margin-top: 150px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non libero volutpat,
@@ -170,21 +208,31 @@
                         Integer sagittis ullamcorper lorem eu facilisis.</h4>
             </div>
         </section>
-        <section id="footer">
+        <section id="footer" class="pb-0">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-7">
                         <div class="footer_logo">
-                            <img src="./img/logo-light.png" width="100%">
+                            <img src="./img/manna-nolabel-light.png">
+                            <div class="text_wrapper">
+                                <p class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis aliquam ex. Nunc dapibus accumsan tellus, vitae dictum
+                                    augue pharetra sagittis. Vivamus quis ex leo. Nulla finibus dui ut urna iaculis vehicula.
+                                </p>
+                                <p>Call Us</p>
+                                <p>+91 11 413 204 08</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-7 footer_middle">
-                        <div class="text_wrapper">
-                            <p class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis aliquam ex. Nunc dapibus accumsan tellus, vitae dictum
-                                augue pharetra sagittis. Vivamus quis ex leo. Nulla finibus dui ut urna iaculis vehicula.
-                            </p>
-                        </div>
+                    <div class="col-md-2 footer_middle">
+                        <p>Explore</p>
+                        <ul class="custom-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="careers.html">Career</a></li>
+                            <li><a href="contact.html">Get In Touch</a></li>
+                        </ul>
                     </div>
                     <div class="col-md-3">
                         <p class="footer_caption">We Are Social</p>
@@ -197,6 +245,13 @@
                 </div>
             </div>
         </section>
+        <div class="bg_black">
+            <div class="container">
+                <div class="footer_text">
+                    <p class="content">Mannan.ai . All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
         <section id="copyright">
             <div class="container">
                 <div class="row">

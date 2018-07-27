@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Mannan.ai: Open Data Platform, Automation Platform, IOT/Devices Platform, API Platform, Mobile Platform, Strategic Designs</title>
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./bower_components/wow/css/libs/animate.css">
+    <link rel="stylesheet" href="./css/material-design-input.css">
+</head>
+
+    <body>
+        <nav class="navbar navbar-light navbar-expand-lg m-auto h-5 position-fixed" style="background-color: rgb(245,245,245)">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="./">
+                        <img src="./img/logo-dark-nolabel.png">
+                    </a>
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">SERVICES</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#">CAREERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">GET IN TOUCH</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="career_hero">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-7 px-0">
+                        <img src="/mannan/img/income.jpg" width="100%"></img>
+                    </div>
+                    <div class="col-md-5 d-flex align-items-center px-0">
+                        <div class="card bg_dark_green shadow text-white p-4">
+                            <h2 class="card-title text-left">How we are different</h5>
+                            <p class="card-text text-left">At Mannan.ai, we are renowned for our direct, no-nonsense attitude to delivery and this successful approach has enabled us to build our business on the basis of positive referrals from IT leaders. Delivering high quality software output is a key principle embedded into every single member of the Mannan team, ensuring we on-board and retains exceptional talent.
+                                Commitment to do the right thing and be prepared to go the extra mile to make it happen has been the foundation which our family has and will always be stand upon.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="career_grid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="h-100 mr-3 p-5 job_listing">
+                            <h2>Software Developer</h2>
+                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
+                            <p class="content mt-3">At Mannan.ai, we are renowned for our direct, no-nonsense attitude to delivery and this successful approach has enabled us to build our business on the basis of positive referrals from IT leaders. Delivering high quality software output is a key principle embedded into every single member of the Mannan team, ensuring we on-board and retains exceptional talent.
+                                Commitment to do the right thing and be prepared to go the extra mile to make it happen has been the foundation which our family has and will always be stand upon.
+                            </p>
+                        </div>
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 p-5 bg_white">
+                        <h5>Thak you for considering a career at Mannan. Your application has been received. If we see a fit, our Talent Acquisition team will be in touch.</h5>
+                        <form id="apply_form" class="mt-5">
+                            <div class="group">      
+                                <input type="text" id="apply_name" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Name</label>
+                            </div>
+                                
+                            <div class="group">      
+                                <input type="text" id="apply_cname" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Company Name</label>
+                            </div>
+
+                            <div class="group">      
+                                <input type="tel" id="apply_phone" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Phone</label>
+                            </div>
+
+                            <div class="group">      
+                                <input type="text" id="apply_resume" onfocus="uploadCVfocus(this)" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Resume</label>
+                            </div>
+                            
+                            <div class="group">      
+                                <input type="text" id="apply_cletter" onfocus="uploadCVfocus(this)" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Cover Letter</label>
+                            </div>
+                                
+                            <div class="group">      
+                                <input type="url" id="apply_lprofile" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>LinkedIn Profile</label>
+                            </div>
+                            <div class="text-right"><button class="custom-button">SUBMIT APPLICATION</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="footer_logo">
+                            <img src="./img/Footer Logo.png">
+                            <div class="text_wrapper">
+                                <p class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis aliquam ex. Nunc dapibus accumsan tellus, vitae dictum
+                                    augue pharetra sagittis. Vivamus quis ex leo. Nulla finibus dui ut urna iaculis vehicula.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="footer_social">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="bg_black">
+            <div class="container">
+                <div class="footer_text">
+                    <p class="content">Mannan.ai . All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./js/typed.min.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./bower_components/parallax.js/parallax.min.js"></script>
+    <script src="./js/jquery.scrollme.min.js"></script>
+    <script src="./js/smoothscroll.min.js"></script>
+    <script src="./js/career-script.js"></script>
+    <script src="./js/all.js"></script>
+
+</html>

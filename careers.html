@@ -14,123 +14,220 @@
     <link rel="stylesheet" href="./bower_components/wow/css/libs/animate.css">
 </head>
 
-    <body onload="initScroll()">
-        <nav class="navbar navbar-light navbar-expand-lg m-auto h-5 position-fixed container" style="background-color: rgb(245,245,245)">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#">
-                    <img src="./img/logo-dark.png">
-                </a>
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">HOME</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link active" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./services.html">SERVICES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CAREERS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">BLOG</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">GET IN TOUCH</a>
-                    </li>
-                </ul>
+    <body>
+        <nav class="navbar navbar-light navbar-expand-lg m-auto h-5 position-fixed" style="background-color: rgb(245,245,245)">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="./">
+                        <img src="./img/logo-dark-nolabel.png">
+                    </a>
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">SERVICES</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#">CAREERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">GET IN TOUCH</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <div class="p-5"></div>
-        <section id="about_us">
-            <div class="container">
-                <div class="mx-auto w-75">
-                    <h5 class="horizontal-headline">
-                        <p>
-                            <span>Lorem</span>
-                        </p>
-                    </h5>
-                    <h1 class="w-50 text-center mx-auto">
-                        Lorem ipsum dolor sit amet
-                    </h1>
-                    <p class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non libero volutpat, tristique orci vel, ullamcorper ante.
-                        Nunc et leo id mauris tincidunt scelerisque ut non mi. Integer sagittis ullamcorper lorem eu facilisis.
-                        Fusce feugiat lobortis imperdiet. Proin a turpis quis nulla sagittis maximus at vitae dui. Nulla facilisi.
-                        Curabitur vel ligula egestas, imperdiet quam in.
-                    </p>
-                    <button onclick="openURL('contact.html')" class="custom-button">
-                        <span>GET IN TOUCH</span>
-                    </button>
-                </div>
-                <div class="mx-auto">
-                    <h5 class="horizontal-headline">
-                        <p>
-                            <span></span>
-                        </p>
-                    </h5>
+        <section id="career_hero">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-7 px-0">
+                        <img src="/mannan/img/income.jpg" width="100%"></img>
+                    </div>
+                    <div class="col-md-5 d-flex align-items-center px-0">
+                        <div class="card bg_dark_green shadow text-white p-4">
+                            <h2 class="card-title text-left">How we are different</h5>
+                            <p class="card-text text-left">At Mannan.ai, we are renowned for our direct, no-nonsense attitude to delivery and this successful approach has enabled us to build our business on the basis of positive referrals from IT leaders. Delivering high quality software output is a key principle embedded into every single member of the Mannan team, ensuring we on-board and retains exceptional talent.
+                                Commitment to do the right thing and be prepared to go the extra mile to make it happen has been the foundation which our family has and will always be stand upon.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="careers">
+        <section id="career_grid">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 border border-dark bg_white p-4">
-                        <h1>MS Dynamics CRM</h1>
-                        <span class="career_req"><i class="fas fa-briefcase"></i> 02-07 Years</span><span class="career_req"><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
-                        <h5 class="mt-3">JOB DESCRIPTION</h5>
-                        <ul>
-                            <li>Technical experience including expertise designing enterprise CRM soltions as well as application deployment</li>
-                            and/or distributed system implementation.
-                            <li>Deep know-how and proven record of applying CRM in sales, marketing and support.</li>
-                            <li>Hands-on experience with multi-phase, enterprise CRM implementations with focus project delivery; presales
-                            experience is preferred as well.</li>
-                        </ul>
-                        <h5>MANNAN IMPEX PVT. LTD.</h5>
-                        <p>We believe in a direct and efficiency driven attitude towards delivering services. The approach has enabled us to
-                        build our business on the basis of positive referrals from our clients.</p>
-                        <button class="custom-button mr-5">APPLY</button><button class="custom-button">CANCEL</button>
+                    <div class="col-md-4">
+                        <div class="h-100 mr-3 p-5 job_listing">
+                            <h2>Python Developer</h2>
+                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
+                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
+                        </div>
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="h-100 mr-3 p-5 job_listing">
+                            <h2>iOS Developer</h2>
+                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
+                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
+                        </div>
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="h-100 mr-3 p-5 job_listing">
+                            <h2>Python Developer</h2>
+                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
+                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
+                        </div>
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="row d-flex">
-                    <div class="col-md-6 pl-0">
-                        <div class="parallax-col" data-parallax="scroll" data-speed=0.8 data-image-src="/mannan/img/businessmen.jpg"></div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="h-100 mr-3 p-5 job_listing">
+                            <h2>Software Developer</h2>
+                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
+                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
+                        </div>
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="row h-100 align-items-center career_grid">
-                            <div class="col-md-6 px-0">
-                                <div class="h-100 border border-dark bg_white mr-3 p-3">
-                                    <h2>Python Developer</h2>
-                                    <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
-                                    <button class="custom-button">CONNECT</button>
-                                </div>
-                            </div>
-                            <div class="col-md-6 px-0">
-                                <div class="h-100 border border-dark bg_white ml-3 p-3">
-                                    <h2>Lorem ipsum dolor sit amet, consectetur</h2>
-                                </div>
-                            </div>
-                            <div class="col-md-6 px-0">
-                                <div class="h-100 border border-dark bg_white mr-3 p-3">
-                                    <h2>Lorem ipsum</h2>
-                                    <p class="content">
-                                        Lorem ipsum dolor sit
-                                        amet, consectetur
-                                        adipiscing elit. Phasellus
-                                        mollis venenatis fringilla.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 px-0">
-                                <div class="h-100 border border-dark bg_white ml-3" style="overflow: hidden;">
-                                    <img src="./img/businessmen.jpg" height="100%">
-                                </div>
-                            </div>
+                    <div class="col-md-4">
+                        <div class="h-100 mr-3 p-5 job_listing">
+                            <h2>Python Developer</h2>
+                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
+                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
+                        </div>
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="h-100 mr-3 p-5 job_listing">
+                            <h2>Python Developer</h2>
+                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
+                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
+                        </div>
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="h-100 mr-3 p-5 job_listing">
+                            <h2>Python Developer</h2>
+                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
+                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
+                        </div>
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="h-100 mr-3 p-5 job_listing">
+                            <h2>Python Developer</h2>
+                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
+                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
+                        </div>
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="h-100 mr-3 p-5 job_listing">
+                            <h2>Python Developer</h2>
+                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
+                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
+                        </div>
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="h-100 mr-3 p-5 job_listing">
+                            <h2>Python Developer</h2>
+                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
+                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
+                        </div>
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="h-100 mr-3 p-5 job_listing">
+                            <h2>Python Developer</h2>
+                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
+                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
+                        </div>
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="h-100 mr-3 p-5 job_listing">
+                            <h2>Python Developer</h2>
+                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
+                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
+                        </div>
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
                         </div>
                     </div>
                 </div>
@@ -139,21 +236,18 @@
         <section id="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-9">
                         <div class="footer_logo">
-                            <img src="./img/logo-light.png" width="100%">
-                        </div>
-                    </div>
-                    <div class="col-md-7 footer_middle">
-                        <div class="text_wrapper">
-                            <p class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis aliquam ex. Nunc dapibus accumsan tellus, vitae dictum
-                                augue pharetra sagittis. Vivamus quis ex leo. Nulla finibus dui ut urna iaculis vehicula.
-                            </p>
+                            <img src="./img/Footer Logo.png">
+                            <div class="text_wrapper">
+                                <p class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis aliquam ex. Nunc dapibus accumsan tellus, vitae dictum
+                                    augue pharetra sagittis. Vivamus quis ex leo. Nulla finibus dui ut urna iaculis vehicula.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <p class="footer_caption">We Are Social</p>
                         <p class="footer_social">
                             <i class="fab fa-facebook-f"></i>
                             <i class="fab fa-linkedin-in"></i>
@@ -163,22 +257,20 @@
                 </div>
             </div>
         </section>
-        <section id="copyright">
+        <div class="bg_black">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12 footer_text">
-                        <p>Mannan.ai . All Rights Reserved</p>
-                        <p onclick="scrollToTop()">Top</p>
-                    </div>
+                <div class="footer_text">
+                    <p class="content">Mannan.ai . All Rights Reserved</p>
                 </div>
             </div>
-        </section>
+        </div>
     </body>
     <script src="./js/typed.min.js"></script>
     <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./bower_components/parallax.js/parallax.min.js"></script>
     <script src="./js/jquery.scrollme.min.js"></script>
     <script src="./js/smoothscroll.min.js"></script>
+    <script src="./js/career-script.js"></script>
     <script src="./js/all.js"></script>
 
 </html>

@@ -4,7 +4,7 @@
 
 body {
     color: #585858;
-    background-color: #f5f5f5;
+    background-color: #F7F8F4;
 }
 
 nav {
@@ -13,10 +13,11 @@ nav {
     right: 0;
     z-index: 3;
     transition: all 0.5s ease-in;
+    box-shadow: 0px 25px 100px 0px rgba(0, 0, 50, 0.1);
 }
 
 .parallax-images {
-    min-height: 75vh;
+    min-height: 60vh;
     background: transparent;
 }
 
@@ -45,10 +46,11 @@ p.content {
 
 .nav-item.active>.nav-link {
     border-bottom: 1px solid #000;
+
 }
 
 .nav-item>.nav-link {
-    font-family: 'BinaryITCBold';
+    font-family: 'OpenSansSemiBold';
     font-size: 15px;
     color: #000;
 }
@@ -106,8 +108,6 @@ section {
 }
 
 .horizontal-headline p {
-    letter-spacing: 2px;
-    font-weight: 900;
     text-transform: uppercase;
     padding-bottom: 0px;
     margin-bottom: 8px;
@@ -117,10 +117,11 @@ section {
     display: block;
     text-align: center;
     z-index: 1;
+    color: #b7b7b7;
 }
 
 .horizontal-headline p:before {
-    border-top: 2px solid #575757;
+    border-top: 2px solid #b7b7b7;
     content: "";
     margin: 0 auto;
     position: absolute;
@@ -134,8 +135,10 @@ section {
 
 .horizontal-headline p span {
     background: #f5f5f5;
-    font-family: "BinaryITC";
+    font-family: "OpenSans";
     font-size: 15px;
+    font-weight: 600;
+    padding: 0 0.5rem;
 }
 
 .horizontal-headline p span img {
@@ -168,7 +171,7 @@ section {
     overflow: hidden;
     max-width: 250px;
     transition: 0.5s ease-in-out;
-    z-index: 1;
+    z-index: 2;
 }
 
 .custom-button:before {
@@ -254,7 +257,7 @@ section {
 }
 
 #services h1 {
-    font-size: 56px;
+    font-size: 48px;
 }
 
 .services_content {
@@ -272,33 +275,41 @@ section {
     transition: all 0.2s ease-in;
 }
 
-.services_tiles .col-md-2:hover, .services_grid .col-md-4:hover > .services_inner_container {
-    background-color: #58dfc7;
+.services_tiles .col-md-2:hover, .services_grid > .services_inner_container:hover {
+    /*background-color: #58dfc7;*/
+    background-color: #304341;
     cursor: pointer;
-    box-shadow: 4px 4px 8px #ccc;
+    box-shadow: 0 5px 10px rgba(0,0,50,0.2);
     transition: all 0.2s ease-in;
+    color: #fff;
 }
 
 .services_tiles .col-md-2:hover > .services_image_container {
-    opacity: 0.2;
+    transform: none;
+    opacity: 0.1;
 }
 
-.services_tiles .col-md-2:hover:nth-child(odd), .services_grid .col-md-4:hover:nth-child(odd) > .services_inner_container {
+/*.services_tiles .col-md-2:hover:nth-child(odd), .services_grid > .services_inner_container:hover:nth-child(odd) {
     background-color: #4FCDDD !important;
     cursor: pointer;
-}
+}*/
 
 .services_tiles .col-md-2:hover>.services_caption_container {
     display: block;
+    transform: none;
+    transition: all 0.2s ease-in;
+    opacity: 1;
 }
 
 .services_caption_container {
-    display: none;
     position: absolute;
-    bottom: 0;
+    top: 35%;
     left: 0;
     right: 0;
     text-align: center;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.2s ease-in;
 }
 
 .services_caption_container h3 {
@@ -321,7 +332,7 @@ section {
     margin: 0px;
     padding: 25px 50px;
     line-height: 35px;
-    background-color: #000;
+    background-color: #585858;
 }
 
 #copyright p {
@@ -331,6 +342,7 @@ section {
 .footer_logo {
     height: 100%;
     display: inline-block;
+    color: #fff;
 }
 
 .footer_middle>.text_wrapper {
@@ -341,21 +353,23 @@ section {
 .footer_social {
     display: flex;
     justify-content: flex-end;
+    color: #939191;
 }
 
 .footer_caption {
     text-align: right;
-    font-size: 15px;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .footer_social i {
-    font-size: 24px;
+    font-size: 20px;
     margin-left: 15px;
-    border: 1px solid white;
+    border: 1px solid #939191;
     border-radius: 4px;
-    width: 32px;
+    width: 28px;
     text-align: center;
-    line-height: 32px;
+    line-height: 28px;
     cursor: pointer;
     transition: all 0.2s ease-in;
 }
@@ -369,7 +383,8 @@ section {
 .footer_text {
     color: #fff;
     display: flex;
-    justify-content: space-between
+    background-color: #000;
+    line-height: 50px;
 }
 
 .footer_text:nth-child(1) {
@@ -380,19 +395,18 @@ section {
     width: 100vw;
 }
 
-.ott_title_left {
-    width: 25%;
+.services_grid {
+    margin-bottom: 60px;
 }
 
 .services_grid .col-md-4 {
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .services_inner_container {
-    border: 1px solid black;
-    background: #fff;
     text-align: center;
-    margin:15px;
+    margin:0px;
     padding: 30px;
 }
 
@@ -400,11 +414,11 @@ section {
     display: none;
 }
 
-.services_grid .col-md-4:hover > .services_inner_container > img {
+.services_grid > .services_inner_container:hover > img {
     display: none;
 }
 
-.services_grid .col-md-4:hover > .services_inner_container > p {
+.services_grid > .services_inner_container:hover > p {
     display: block;
 }
 
@@ -412,7 +426,19 @@ section {
     opacity: 0.5;
 }
 
+.form-group input::placeholder {
+    opacity: 0.5;
+}
+
+.form-group input {
+    border-radius: 0;
+}
+
 #contactform .form-group input:focus::placeholder, #contactform .form-group textarea:focus::placeholder {
+    opacity: 0;
+}
+
+.form-group input:focus::placeholder {
     opacity: 0;
 }
 
@@ -423,6 +449,10 @@ section {
 
 .bg_blue {
     background-color: #4FCDDD !important;
+}
+
+.bg_black {
+    background-color: #000;
 }
 
 .horizontal-headline.white-line p::before {
@@ -448,4 +478,186 @@ section {
 
 .career_grid .col-md-6 {
     height: 250px;
+}
+
+.career_tiles {
+    height: 235px;
+    overflow: hidden;
+    position: relative;
+}
+
+.career_bottom_container {
+    display: flex;
+    justify-content: space-between
+}
+
+.career_bottom_container .career_tiles {
+    width: 31%;
+}
+
+.career_bottom_container .career_tiles img {
+    width: 100%;
+}
+
+.corners {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    transition: .3s;
+    z-index: 1;
+}
+
+.corners > * {
+    position: absolute;
+    border: 1px solid #b7b7b7;
+    height: 10px;
+    width: 10px;
+}
+
+.corners > .corner_l-t {
+    left: 0;
+    top: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.corners > .corner_r-t {
+    right: 0;
+    top: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+.corners > .corner_l-b {
+    left: 0;
+    bottom: 0;
+    border-right: 0;
+    border-top: 0;
+}
+
+.corners > .corner_r-b {
+    right: 0;
+    bottom: 0;
+    border-left: 0;
+    border-top: 0;
+}
+
+.career_tiles {
+    cursor: pointer
+}
+
+.career_tiles.overlay:hover > .career_tile_title_wrapper, .career_tiles.overlay:hover > .career_title_image:after {
+    transform: none;
+    opacity: 1;
+    transition: all 0.2s ease-in;
+}
+
+.career_tile_title_wrapper {
+    position: absolute;;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 30%;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: .2s ease-out;
+    color: #fff;
+}
+
+.career_title_image {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.career_title_image img {
+    height: 100%;
+    vertical-align: top;
+}
+
+.career_title_image:after {
+    content: '\A';
+    position: absolute;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,.6);
+    opacity: 0;
+    transition: all 0.2s ease-in;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+#animate-height {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+}
+
+ul.custom-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.custom-list > li > a, ul.custom-list > li > a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_middle p {
+    font-weight: bold;
+}
+
+.footer_logo > .text_wrapper > p:nth-child(n+2) {
+    font-size: 20px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+#resume_form_card {
+    opacity: 0;
+    transform: translateX(45px);
+    transition: all 0.2s ease-in;
+}
+
+.bg_dark_green {
+    background-color: #304341;
+}
+
+.text_white {
+    color: #fff;
+}
+
+.right_trust .row {
+    border-bottom: 2px solid #b7b7b7;
+}
+
+.about_grid .col-md-6 {
+    text-align: center;
+}
+
+.about_grid_image img {
+    width: 90px;
+}
+
+.accordion_button {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.accordion_button:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+#career_grid .container .row .col-md-4 {
+    outline: 1px solid #eee;
+}
+
+.job_listing  h2{
+    font-family: OpenSans;
 }
