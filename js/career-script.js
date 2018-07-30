@@ -1,6 +1,9 @@
-/*$(document).ready(function () {
+$(document).ready(function () {
 
-    Array.prototype.forEach.call(document.getElementsByClassName('apply_button'), function (element) {
+    $('.job_listing_container').click(function () {
+        
+    })
+    /*Array.prototype.forEach.call(document.getElementsByClassName('apply_button'), function (element) {
         element.addEventListener("click", function () {
             document.getElementById('animate-height').firstElementChild.firstElementChild.innerHTML = this.parentElement.parentElement.firstElementChild.innerText;
             //console.log(this.parentElement.parentElement.firstElementChild.innerText);
@@ -11,9 +14,9 @@
             });
         })
 
-    });
+    });*/
 
-})*/
+})
 
 function uploadCVfocus(that) {
     console.log(that)

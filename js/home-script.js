@@ -33,10 +33,11 @@ $(document).ready(function () {
 function bodyScroll () {
     scrollPos = $(window).scrollTop();
     viewportheightoffset = $(window).height() - 700;
+    opacity = scrollPos/viewportheightoffset
     $('.video-hero').css("opacity", 1 - scrollPos/viewportheightoffset);
     if(scrollPos > 10) {
         //document.getElementById('mannan_svg').firstElementChild.style.width = "100vw"
-        if($(window).scrollTop()>$(window).height()) {
+        if(opacity>1) {
             $('nav').removeClass('navbar-dark');
             $('nav').addClass('navbar-light');
             $('nav').css('background-color', '#f5f5f5');

@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="./css/fonts.css">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/responsive.css">
+        <link rel="stylesheet" href="./css/responsive-bootstrap.css">
         <link rel="stylesheet" href="./bower_components/wow/css/libs/animate.css">
         <link rel="stylesheet" href="./css/material-design-input.css">
     </head>
@@ -49,111 +50,111 @@
                 </div>
             </div>
         </nav>
-        <section id="contact_hero">
+        <section id="contact_hero" class="mb-0">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-8 bg_white">
-                        <img src="./img/businessmen.jpg" width="100%">
-                    </div>
-                    <div class="col-md-4 d-flex align-items-center px-0">
-                        <img src="./img/map.png" width="100%">
+                <div class="image_card position-relative">
+                    <div class="w-md-85 parallax-images" data-parallax="scroll" data-speed=0.8 data-image-src="/mannan/img/Get In Touch.jpg"></div>
+                    <div class="card shadow p-5 text-white bg_dark_green w-md-35 card-position">
+                        <p class="content">At Mannan, we use our innate ability to listen deeply for customer-specific, industry wide challenges and technology opportunities - crafting insightful solutions that address these situations, differentiating ourselves from competitors.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 p-5 bg_white">
-                        <h2 class="my-3">Get in touch with us!</h2>
-                        <form id="contactform">
-                            <div class="group">      
-                                <input type="text" id="apply_name" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Name</label>
-                            </div>
-                                
-                            <div class="group">      
-                                <input type="text" id="apply_cname" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Company Name</label>
-                            </div>
-
-                            <div class="group">      
-                                <input type="tel" id="apply_phone" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Phone</label>
-                            </div>
-
-                            <div class="group">      
-                                <input type="email" id="apply_email" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Email</label>
-                            </div>
-
-                            <button class="custom-button w-100" style="max-width: unset;">SEND MESSAGE</button>
-                        </form>
-                    </div>
-                    <div class="col-md-4">
-                        <h2 class="my-3">Talk to us</h2>
-                        <p class="content my-4">
-                            We really like talking to people. Talking about
-                            ideas, innovation, design, technology and
-                            inspiration. Talking about everything.
-                        </p>
-                        <p class="content my-4">
-                            hello@mannan.ai
-                        </p>
-                        <p class="content my-4">
-                            WORK WITH US
-                            Let's work together. Hire us!
-                            hr@mannan.ai
-                        </p>
-                        <p class="content my-4">
-                            COME TO SEE US
-                            Mannan Impex Pvt. Ltd.
-                            D-147, Okhla Ph1,
-                            Delhi - 110035
-                        </p>
-                        <p class="content my-4">
-                            +91 0 45896545
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="footer" class="pb-0">
-            <div class="container">
-                <div class="row">
+                <div class="row my-5" style="height: 825px;">
                     <div class="col-md-7">
-                        <div class="footer_logo">
-                            <img src="./img/manna-nolabel-light.png">
-                            <div class="text_wrapper">
-                                <p class="content">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis aliquam ex. Nunc dapibus accumsan tellus, vitae dictum
-                                    augue pharetra sagittis. Vivamus quis ex leo. Nulla finibus dui ut urna iaculis vehicula.
+
+                        <div class="pl-5 pr-5 pt-5 mr-3 bg_white shadow h-100">
+                            <h2 class="my-3">Get in touch with us!</h2>
+                            <form id="contactform">
+                                <div class="group">      
+                                    <input type="text" id="apply_name" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Name</label>
+                                </div>
+                                    
+                                <div class="group">      
+                                    <input type="text" id="apply_cname" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Company Name</label>
+                                </div>
+    
+                                <div class="group">      
+                                    <input type="tel" id="apply_phone" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Phone</label>
+                                </div>
+    
+                                <div class="group">      
+                                    <input type="email" id="apply_email" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Email</label>
+                                </div>
+
+                                <div class="group">      
+                                    <textarea id="apply_email" rows="3" required></textarea>
+                                    <span class="bar"></span>
+                                    <label>How can we help?</label>
+                                </div>
+    
+                                <button class="custom-button w-100" style="max-width: unset;">SEND MESSAGE</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-5 px-0">
+                        <div class="h-100 d-flex flex-column justify-content-between">
+                            <div class="card shadow p-5 ml-3">
+                                <h2 class="my-3">Talk to us</h2>
+                                <p class="content my-2">
+                                    We really like talking to people. Talking about
+                                    ideas, innovation, design, technology and
+                                    inspiration. Talking about everything.
                                 </p>
-                                <p>Call Us</p>
-                                <p>+91 11 413 204 08</p>
+                                <p class="content my-2">
+                                    hello@mannan.ai
+                                </p>
+                                <p class="content my-2">
+                                    WORK WITH US
+                                    Let's work together. Hire us!
+                                    hr@mannan.ai
+                                </p>
+                                <p class="content my-2">
+                                    COME TO SEE US
+                                    Mannan Impex Pvt. Ltd.
+                                    D-147, Okhla Ph1,
+                                    Delhi - 110035
+                                </p>
+                                <p class="content my-2">
+                                    +91 0 45896545
+                                </p>
+                            </div>
+                            <div class="card map_card shadow ml-3 position-relative">
+                                <img src="./img/map.png" width="100%">
+                                <div class="dark_overlay">
+                                    <h4><a href="#">Reach Us Here</a></h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 footer_middle">
-                        <p>Explore</p>
-                        <ul class="custom-list">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="careers.html">Career</a></li>
-                            <li><a href="contact.html">Get In Touch</a></li>
-                        </ul>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="footer_logo">
+                            <img src="./img/Footer Logo.png">
+                            <div class="text_wrapper">
+                                <p class="content grey-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis aliquam ex. Nunc dapibus accumsan tellus, vitae dictum
+                                    augue pharetra sagittis. Vivamus quis ex leo. Nulla finibus dui ut urna iaculis vehicula.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-3">
-                        <p class="footer_caption">We Are Social</p>
                         <p class="footer_social">
                             <i class="fab fa-facebook-f"></i>
                             <i class="fab fa-linkedin-in"></i>
@@ -166,7 +167,7 @@
         <div class="bg_black">
             <div class="container">
                 <div class="footer_text">
-                    <p class="content">Mannan.ai . All Rights Reserved</p>
+                    <p class="content grey-text">Mannan.ai . All Rights Reserved</p>
                 </div>
             </div>
         </div>

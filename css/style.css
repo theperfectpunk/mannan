@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-    margin: 75px 0px;
+    margin: 70px 0px;
 }
 
 /********************************
@@ -147,16 +147,12 @@ section {
 
 /**********About Us**********/
 
-#about_us h1, {
-    font-size: 96px;
-}
-
 #about_us .container {
     text-align: center;
 }
 
 #about_us>.container>div>h1 {
-    font-size: 56px;
+    font-size: 48px;
 }
 
 .custom-button {
@@ -242,18 +238,6 @@ section {
 
 .image_card img {
     width: 100%;
-}
-
-.image_card .card {
-    margin-top: -300px;
-}
-
-#services {
-    margin-bottom: 150px
-}
-
-#services .container .horizontal-headline {
-    margin-top: 75px;
 }
 
 #services h1 {
@@ -625,7 +609,7 @@ ul.custom-list > li > a, ul.custom-list > li > a:hover {
 }
 
 .bg_dark_green {
-    background-color: #304341;
+    background-color: #304341 !important;
 }
 
 .text_white {
@@ -660,4 +644,119 @@ ul.custom-list > li > a, ul.custom-list > li > a:hover {
 
 .job_listing  h2{
     font-family: OpenSans;
+}
+
+.job_listing_container {
+    transition: all 0.2s ease-in;
+}
+
+.job_listing_container:hover {
+    background-color: #304341;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.job_listing_container:hover > .job_listing {
+    color: #fff;
+}
+
+.card_container {
+    top: 15vh;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+}
+
+.outline-left {
+    box-shadow: -1px 0px 0px 0px #ccc;
+}
+
+.outline-right {
+    box-shadow: 1px 0px 0px 0px #ccc;
+}
+
+.outline-top {
+    box-shadow: 0px -1px 0px 0px #ccc;
+}
+
+.outline-bottom {
+    box-shadow: 0px 1px 0px 0px #ccc;
+}
+
+.outline-bottom-right {
+    box-shadow: 0px 1px 0px 0px #ccc, 1px 0px 0px 0px #ccc;
+}
+
+.outline-bottom-left {
+    box-shadow: 0px 1px 0px 0px #ccc, -1px 0px 0px 0px #ccc;
+}
+
+.outline-top-right {
+    box-shadow: 0px -1px 0px 0px #ccc, 1px 0px 0px 0px #ccc;
+}
+
+.outline-top-left {
+    box-shadow: 0px -1px 0px 0px #ccc, -1px 0px 0px 0px #ccc;
+}
+
+.outline-left-bottom-right {
+    box-shadow: 0px 1px 0px 0px #ccc, -1px 0px 0px 0px #ccc, 1px 0px 0px 0px #ccc;
+}
+
+.outline-left-top-right {
+    box-shadow: 0px -1px 0px 0px #ccc, -1px 0px 0px 0px #ccc, 1px 0px 0px 0px #ccc;
+}
+
+.border-bottom-list {
+    border-bottom: 2px solid #ccc;
+}
+
+.border-left-list {
+    border-left: 1px solid #ccc;
+}
+
+.border-right-list {
+    border-right: 1px solid #ccc;
+}
+
+.grey-text {
+    color: #939191
+}
+
+.card-position {
+    top: 20vh;
+    right: 0;
+    position: absolute;
+}
+
+.dark_overlay {
+    background-color: rgba(0, 0, 50, 0);
+    transition: all 0.2s ease-in;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dark_overlay > h4 {
+    opacity: 0;
+    transition: all 0.2s ease-in;
+    margin: auto;
+}
+
+.dark_overlay > h4 > a {
+    text-decoration: none;
+    color: #fff
+}
+
+.dark_overlay:hover {
+    background-color: rgba(0,0,0,0.4);
+    transition: all 0.2s ease-in;
+}
+
+.dark_overlay:hover > h4 {
+    opacity: 1;
+    transition: all 0.2s ease-in;
 }

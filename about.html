@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/responsive-bootstrap.css">
     <link rel="stylesheet" href="./bower_components/wow/css/libs/animate.css">
 </head>
 
@@ -50,22 +51,23 @@
     </nav>
     <div class="p-5"></div>
     <section id="about_us">
-        <div class="container">
-            <div class="mx-auto w-75">
+        <div class="container-fluid">
+            <div class="w-100">
                 <h5 class="horizontal-headline">
                     <p>
                         <span>WHAT WE DO</span>
                     </p>
                 </h5>
+            </div>
+        </div>
+        <div class="container">
+            <div class="mx-auto w-75">
                 <h1 class="w-100 text-center mx-auto">
                     How we are different
                 </h1>
-                <p class="content">
-                        At Mannan, we use our innate ability to listen deeply for customer-specific, industry wide challenges and technology opportunities - crafting insightful solutions that address these situations, differentiating ourselves from competitors.
+                <p class="content text-center">
+                    At Mannan, we use our innate ability to listen deeply for customer-specific, industry wide challenges and technology opportunities - crafting insightful solutions that address these situations, differentiating ourselves from competitors.
                 </p>
-                <button onclick="openURL('contact.html')" class="custom-button">
-                    <span>GET IN TOUCH</span>
-                </button>
             </div>
             <div class="mx-auto">
                 <h5 class="horizontal-headline">
@@ -77,9 +79,9 @@
     </section>
     <section id="mission">
         <div class="container">
-            <div class="image_card">
-                <div class="w-85 parallax-images" data-parallax="scroll" data-speed=0.8 data-image-src="/mannan/img/businessmen.jpg"></div>
-                <div class="card shadow float-right p-5 w-35 text-white bg_dark_green" style="margin-top: -400px">
+            <div class="image_card position-relative">
+                <div class="w-md-85 parallax-images" data-parallax="scroll" data-speed=0.8 data-image-src="/mannan/img/about us.jpg"></div>
+                <div class="card shadow float-right p-5 w-md-35 text-white bg_dark_green card-position">
                     <p class="content">At Mannan, we use our innate ability to listen deeply for customer-specific, industry wide challenges and technology opportunities - crafting insightful solutions that address these situations, differentiating ourselves from competitors.</p>
                 </div>
             </div>
@@ -89,16 +91,16 @@
                         Establishing Trust
                     </h1>
                     <p class="content">
-                    Understanding the status of a requirement, user story, ticket, MVP or project is key to in order to demonstrate knowledge and experience and ensure that the business need is actually resolved. Building on our philosophy of frequent communication in agile delivery, we take care to ensure that requirements are understood at the first time of asking and delivered to the quality our clients expect.
+                        Understanding the status of a requirement, user story, ticket, MVP or project is key to in order to demonstrate knowledge and experience and ensure that the business need is actually resolved. Building on our philosophy of frequent communication in agile delivery, we take care to ensure that requirements are understood at the first time of asking and delivered to the quality our clients expect.
                     </p>
                     <p class="content mt-3">
-                    No two engagements are ever the same. Different technologies, different cultures and different constraints will all drive how the delivery process works. Whether your process is scrum, kanban or another methodology; whether continuous integration is your standard mode of operation or it’s a combination of all of the above, there are a number of factors that are taken into consideration when our recommendations are made. This enables us to tailor solutions to fit into our clients needs and environments.
+                        No two engagements are ever the same. Different technologies, different cultures and different constraints will all drive how the delivery process works. Whether your process is scrum, kanban or another methodology; whether continuous integration is your standard mode of operation or it'’'s a combination of all of the above, there are a number of factors that are taken into consideration when our recommendations are made. This enables us to tailor solutions to fit into our clients needs and environments.
                     </p>
                 </div>
                 <div class="col-md-5 right_trust">
                     <div class="row py-3">
                         <div class="col-md-3">
-                            <img src="./img/Insightful solutioning.png" width="100%">                                
+                            <img src="./img/icons/about-us/Insightful solutioning.png" width="100%">                                
                         </div>
                         <div class="col-md-9">
                             <h4>Insightful solutioning</h4>
@@ -107,7 +109,7 @@
                     </div>
                     <div class="row py-3">
                         <div class="col-md-3">
-                            <img src="./img/Ongoing collaboration.png" width="100%">                                    
+                            <img src="./img/icons/about-us/Ongoing collaboration.png" width="100%">                                    
                         </div>
                         <div class="col-md-9">
                             <h4>Ongoing collaboration</h4>
@@ -116,7 +118,7 @@
                     </div>
                     <div class="row py-3">
                         <div class="col-md-3">
-                            <img src="./img/Pressure-tested project management.png" width="100%">
+                            <img src="./img/icons/about-us/ressure-tested project management.png" width="100%">
                         </div>
                         <div class="col-md-9">
                             <h4>Pressure-tested project manangement</h4>
@@ -126,7 +128,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 text-center">
+                <div class="col-md-6 py-3 text-center">
                     <div class="row my-3">
                         <div class="col-md-6 about_grid_image">
                             <img src="./img/about-grid/Software Development.png">
@@ -158,13 +160,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 d-flex align-items-center px-0">
+                <div class="col-md-6 py-3 d-flex align-items-center px-0">
                     <div class="accordion w-100" id="about_accordion">
                         <div class="card">
                             <div class="card-header bg_dark_green" id="headingOne">
                             <h2 class="mb-0">
                                 <button class="btn btn-link accordion_button" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Our Delivery process
+                                    Our Delivery process
                                 </button>
                             </h2>
                             </div>
@@ -208,24 +210,21 @@
             </div>
         </div>
     </section>
-    <section id="footer" class="pb-0">
+    <section id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-9">
                     <div class="footer_logo">
-                        <img src="./img/manna-nolabel-light.png">
+                        <img src="./img/Footer Logo.png">
                         <div class="text_wrapper">
-                            <p class="content">
+                            <p class="content grey-text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis aliquam ex. Nunc dapibus accumsan tellus, vitae dictum
                                 augue pharetra sagittis. Vivamus quis ex leo. Nulla finibus dui ut urna iaculis vehicula.
                             </p>
-                            <p>Call Us</p>
-                            <p>+91 11 413 204 08</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <p class="footer_caption">We Are Social</p>
                     <p class="footer_social">
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-linkedin-in"></i>
@@ -238,7 +237,7 @@
     <div class="bg_black">
         <div class="container">
             <div class="footer_text">
-                <p class="content">Mannan.ai . All Rights Reserved</p>
+                <p class="content grey-text">Mannan.ai . All Rights Reserved</p>
             </div>
         </div>
     </div>

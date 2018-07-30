@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/responsive-bootstrap.css">
     <link rel="stylesheet" href="./bower_components/wow/css/libs/animate.css">
 </head>
 
-    <body>
+    <body onload="initScroll()">
         <nav class="navbar navbar-light navbar-expand-lg m-auto h-5 position-fixed" style="background-color: rgb(245,245,245)">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
@@ -30,7 +31,7 @@
                             <a class="nav-link" href="./index.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT</a>
+                            <a class="nav-link" href="./about.html">ABOUT</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./services.html">SERVICES</a>
@@ -49,18 +50,14 @@
             </div>
         </nav>
         <section id="career_hero">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-7 px-0">
-                        <img src="/mannan/img/income.jpg" width="100%"></img>
-                    </div>
-                    <div class="col-md-5 d-flex align-items-center px-0">
-                        <div class="card bg_dark_green shadow text-white p-4">
-                            <h2 class="card-title text-left">How we are different</h5>
-                            <p class="card-text text-left">At Mannan.ai, we are renowned for our direct, no-nonsense attitude to delivery and this successful approach has enabled us to build our business on the basis of positive referrals from IT leaders. Delivering high quality software output is a key principle embedded into every single member of the Mannan team, ensuring we on-board and retains exceptional talent.
-                                Commitment to do the right thing and be prepared to go the extra mile to make it happen has been the foundation which our family has and will always be stand upon.
-                            </p>
-                        </div>
+            <div class="container">
+                <div class="image_card position-relative">
+                    <video class="w-md-85" autoplay muted loop>
+                        <source src="./media/Career_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video> 
+                    <div class="card shadow float-right p-5 w-md-35 text-white bg_dark_green card-position">
+                        <p class="content">At Mannan, we use our innate ability to listen deeply for customer-specific, industry wide challenges and technology opportunities - crafting insightful solutions that address these situations, differentiating ourselves from competitors.</p>
                     </div>
                 </div>
             </div>
@@ -68,11 +65,10 @@
         <section id="career_grid">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 job_listing_container" onclick="openURL('career-apply.html')">
                         <div class="h-100 mr-3 p-5 job_listing">
                             <h2>Python Developer</h2>
                             <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
-                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
                         </div>
                         <div class="corners">
                             <div class="corner_l-t"></div>
@@ -81,11 +77,10 @@
                             <div class="corner_r-b"></div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 job_listing_container" onclick="openURL('career-apply.html')">
                         <div class="h-100 mr-3 p-5 job_listing">
-                            <h2>iOS Developer</h2>
+                            <h2>iOS<br /> Developer</h2>
                             <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
-                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
                         </div>
                         <div class="corners">
                             <div class="corner_l-t"></div>
@@ -94,11 +89,10 @@
                             <div class="corner_r-b"></div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 job_listing_container" onclick="openURL('career-apply.html')">
                         <div class="h-100 mr-3 p-5 job_listing">
                             <h2>Python Developer</h2>
                             <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
-                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
                         </div>
                         <div class="corners">
                             <div class="corner_l-t"></div>
@@ -109,11 +103,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 job_listing_container" onclick="openURL('career-apply.html')">
                         <div class="h-100 mr-3 p-5 job_listing">
                             <h2>Software Developer</h2>
                             <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
-                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
                         </div>
                         <div class="corners">
                             <div class="corner_l-t"></div>
@@ -122,11 +115,10 @@
                             <div class="corner_r-b"></div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 job_listing_container" onclick="openURL('career-apply.html')">
                         <div class="h-100 mr-3 p-5 job_listing">
                             <h2>Python Developer</h2>
                             <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
-                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
                         </div>
                         <div class="corners">
                             <div class="corner_l-t"></div>
@@ -135,52 +127,10 @@
                             <div class="corner_r-b"></div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 job_listing_container" onclick="openURL('career-apply.html')">
                         <div class="h-100 mr-3 p-5 job_listing">
                             <h2>Python Developer</h2>
                             <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
-                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
-                        </div>
-                        <div class="corners">
-                            <div class="corner_l-t"></div>
-                            <div class="corner_r-t"></div>
-                            <div class="corner_l-b"></div>
-                            <div class="corner_r-b"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="h-100 mr-3 p-5 job_listing">
-                            <h2>Python Developer</h2>
-                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
-                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
-                        </div>
-                        <div class="corners">
-                            <div class="corner_l-t"></div>
-                            <div class="corner_r-t"></div>
-                            <div class="corner_l-b"></div>
-                            <div class="corner_r-b"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="h-100 mr-3 p-5 job_listing">
-                            <h2>Python Developer</h2>
-                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
-                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
-                        </div>
-                        <div class="corners">
-                            <div class="corner_l-t"></div>
-                            <div class="corner_r-t"></div>
-                            <div class="corner_l-b"></div>
-                            <div class="corner_r-b"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="h-100 mr-3 p-5 job_listing">
-                            <h2>Python Developer</h2>
-                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
-                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
                         </div>
                         <div class="corners">
                             <div class="corner_l-t"></div>
@@ -191,11 +141,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 job_listing_container" onclick="openURL('career-apply.html')">
                         <div class="h-100 mr-3 p-5 job_listing">
                             <h2>Python Developer</h2>
                             <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
-                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
                         </div>
                         <div class="corners">
                             <div class="corner_l-t"></div>
@@ -204,11 +153,10 @@
                             <div class="corner_r-b"></div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 job_listing_container" onclick="openURL('career-apply.html')">
                         <div class="h-100 mr-3 p-5 job_listing">
                             <h2>Python Developer</h2>
                             <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
-                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
                         </div>
                         <div class="corners">
                             <div class="corner_l-t"></div>
@@ -217,11 +165,48 @@
                             <div class="corner_r-b"></div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 job_listing_container" onclick="openURL('career-apply.html')">
                         <div class="h-100 mr-3 p-5 job_listing">
                             <h2>Python Developer</h2>
                             <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
-                            <div class="text-center"><button onclick="openURL('career-apply.html')" class="custom-button">APPLY</button></div>
+                        </div>
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 job_listing_container" onclick="openURL('career-apply.html')">
+                        <div class="h-100 mr-3 p-5 job_listing">
+                            <h2>Python Developer</h2>
+                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
+                        </div>
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 job_listing_container" onclick="openURL('career-apply.html')">
+                        <div class="h-100 mr-3 p-5 job_listing">
+                            <h2>Python Developer</h2>
+                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
+                        </div>
+                        <div class="corners">
+                            <div class="corner_l-t"></div>
+                            <div class="corner_r-t"></div>
+                            <div class="corner_l-b"></div>
+                            <div class="corner_r-b"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 job_listing_container" onclick="openURL('career-apply.html')">
+                        <div class="h-100 mr-3 p-5 job_listing">
+                            <h2>Python Developer</h2>
+                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
                         </div>
                         <div class="corners">
                             <div class="corner_l-t"></div>
@@ -240,7 +225,7 @@
                         <div class="footer_logo">
                             <img src="./img/Footer Logo.png">
                             <div class="text_wrapper">
-                                <p class="content">
+                                <p class="content grey-text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis aliquam ex. Nunc dapibus accumsan tellus, vitae dictum
                                     augue pharetra sagittis. Vivamus quis ex leo. Nulla finibus dui ut urna iaculis vehicula.
                                 </p>
@@ -260,7 +245,7 @@
         <div class="bg_black">
             <div class="container">
                 <div class="footer_text">
-                    <p class="content">Mannan.ai . All Rights Reserved</p>
+                    <p class="content grey-text">Mannan.ai . All Rights Reserved</p>
                 </div>
             </div>
         </div>
