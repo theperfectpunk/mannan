@@ -14,6 +14,7 @@ nav {
     z-index: 3;
     transition: all 0.5s ease-in;
     box-shadow: 0px 25px 100px 0px rgba(0, 0, 50, 0.1);
+    min-height: 81px;
 }
 
 .parallax-images {
@@ -38,6 +39,7 @@ p.content {
 
 .homenav>.nav-item.active>.nav-link {
     border-bottom: 1px solid #fff;
+    font-family: 'OpenSansSemiBold';
 }
 
 .homenav>.nav-item>.nav-link {
@@ -46,17 +48,25 @@ p.content {
 
 .nav-item.active>.nav-link {
     border-bottom: 1px solid #000;
-
+    font-family: 'OpenSansSemiBold';
 }
 
 .nav-item>.nav-link {
-    font-family: 'OpenSansSemiBold';
-    font-size: 15px;
+    font-family: 'OpenSans';
+    font-size: 12px;
     color: #000;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.nav-item>.nav-link:hover {
+    font-family: 'OpenSansSemiBold';
+}
+
+h1.page_heading {
     font-family: 'BinaryITCBold';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'OpenSansLight';
 }
 
 section {
@@ -104,7 +114,7 @@ section {
 
 .horizontal-headline {
     width: 100%;
-    margin: 30px 0px;
+    margin: 70px 0px;
 }
 
 .horizontal-headline p {
@@ -245,7 +255,7 @@ section {
 }
 
 .services_content {
-    margin: 50px 0px;
+    margin: 70px 0px;
 }
 
 .services_tiles {
@@ -347,13 +357,12 @@ section {
 }
 
 .footer_social i {
-    font-size: 20px;
-    margin-left: 15px;
+    font-size: 28px;
     border: 1px solid #939191;
     border-radius: 4px;
-    width: 28px;
+    width: 42px;
     text-align: center;
-    line-height: 28px;
+    line-height: 42px;
     cursor: pointer;
     transition: all 0.2s ease-in;
 }
@@ -733,6 +742,7 @@ ul.custom-list > li > a, ul.custom-list > li > a:hover {
     background-color: rgba(0, 0, 50, 0);
     transition: all 0.2s ease-in;
     position: absolute;
+    top: 0;
     height: 100%;
     width: 100%;
     display: flex;
@@ -754,9 +764,172 @@ ul.custom-list > li > a, ul.custom-list > li > a:hover {
 .dark_overlay:hover {
     background-color: rgba(0,0,0,0.4);
     transition: all 0.2s ease-in;
+    box-shadow: 0 5px 10px rgba(0,0,50,0.2);
 }
 
 .dark_overlay:hover > h4 {
     opacity: 1;
     transition: all 0.2s ease-in;
+}
+
+.play_button {
+    position: absolute;
+    top: calc(50% - 48px);
+    left: 50%;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s ease-in;
+}
+
+.play_button i {
+    color: #fff;;
+    font-size: 48px;
+    line-height: 88px;
+    width: 96px;
+    border-radius: 50%;
+    padding-left: 10px;
+    border: 4px solid #fff;
+}
+
+.blog_grid {
+    height: 570px;
+    overflow: hidden;
+}
+
+.blog_grid .col-md-6 {
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.blog_grid_img {
+    height: 100%;
+    padding: 0;
+    position: relative;
+}
+
+.blog_grid_caption {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.blog_grid_caption:hover {
+    background: rgba(48, 67, 65, 1);
+    transition: all 0.2s ease-in;
+    box-shadow: 0 5px 10px rgba(0,0,50,0.2);
+}
+
+.blog_grid_caption:hover > h2, .blog_grid_caption:hover > p.content {
+    opacity: 1;
+    transition: all 0.2s ease-in;
+}
+
+.blog_grid_caption h2, .blog_grid_caption p.content {
+    text-align: left;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+
+.bg_white_50 {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.blog_grid_tile {
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.blog_grid_tile:hover {
+    background: rgba(48, 67, 65, 1);
+    color: #fff;
+    transition: all 0.2s ease-in;
+}
+
+.blog_single_grid {
+    position: relative;
+}
+
+.blog_single_grid_overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(48, 67, 65, 1);
+    transition: all 0.2s ease-in;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.blog_single_grid:hover > .blog_single_grid_overlay {
+    opacity: 1;
+    transition: all 0.2s ease-in;
+    box-shadow: 0 5px 10px rgba(0,0,50,0.2);
+}
+
+.blog_single_grid:hover > .col-md-6 h2 {
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.blog_single_grid:hover > .col-md-6 > p.content {
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.left_widget_list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.left_widget_list li {
+    font-weight: bold;
+}
+
+.left_widget_list li a {
+    color: rgb(88,88,88)
+}
+
+.left_widget_list li a:hover {
+    text-decoration: none;
+}
+
+.article {
+    padding-top: 100px;
+}
+
+.article img {
+    width: 100%;
+}
+
+.article p.content {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.accordion .card-header h2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggle_button {
+    color: #fff;
+}
+
+#about_accordion .card {
+    background-color: transparent;
+    border: none;
+}
+
+.toggle_button:hover {
+    color: #fff;
+}
+
+.std_horiz_margin {
+    margin: 70px 0px;
 }

@@ -40,7 +40,7 @@
                             <a class="nav-link active" href="#">CAREERS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">BLOG</a>
+                            <a class="nav-link" href="./blog.html">BLOG</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./contact.html">GET IN TOUCH</a>
@@ -52,10 +52,15 @@
         <section id="career_hero">
             <div class="container">
                 <div class="image_card pb-5">
-                    <video class="w-100" autoplay muted loop>
-                        <source src="./media/Career_video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video> 
+                    <div class="position-relative">
+                        <video class="w-100" id="hero_video" loop>
+                            <source src="./media/Career_video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="play_button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
                     <div class="scrollme">
                         <div class="card bg_dark_green shadow text-white ml-5 p-4 float-left animateme" style="width: 24rem; margin-top: -200px; transform: translate3d(0, 50px,0);" data-when="enter" data-from="1" data-to="0" data-opacity="1" data-translatey="50">
                             <h2 class="card-title text-left">Mission</h2>
@@ -69,10 +74,10 @@
         <section id="career_grid">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 job_listing_container" onclick="openURL('career-apply.html')">
+                    <div class="col-md-4 job_listing_container" onclick="openURL('career-apply.html?job=1')">
                         <div class="h-100 mr-3 p-5 job_listing">
-                            <h2>Python Developer</h2>
-                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
+                            <h2>Software Developer - Python/C/C++</h2>
+                            <span class="mr-3"><i class="fas fa-briefcase"></i> 5-7 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
                         </div>
                         <div class="corners">
                             <div class="corner_l-t"></div>
@@ -81,10 +86,10 @@
                             <div class="corner_r-b"></div>
                         </div>
                     </div>
-                    <div class="col-md-4 job_listing_container" onclick="openURL('career-apply.html')">
+                    <div class="col-md-4 job_listing_container" onclick="openURL('career-apply.html?job=2')">
                         <div class="h-100 mr-3 p-5 job_listing">
-                            <h2>iOS<br /> Developer</h2>
-                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
+                            <h2>PHP<br /> Developer</h2>
+                            <span class="mr-3"><i class="fas fa-briefcase"></i> 3-5 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
                         </div>
                         <div class="corners">
                             <div class="corner_l-t"></div>
@@ -93,10 +98,10 @@
                             <div class="corner_r-b"></div>
                         </div>
                     </div>
-                    <div class="col-md-4 job_listing_container" onclick="openURL('career-apply.html')">
+                    <div class="col-md-4 job_listing_container" onclick="openURL('career-apply.html?job=3')">
                         <div class="h-100 mr-3 p-5 job_listing">
-                            <h2>Python Developer</h2>
-                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
+                            <h2>Software Testing - Home Automation</h2>
+                            <span class="mr-3"><i class="fas fa-briefcase"></i> 0-5 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
                         </div>
                         <div class="corners">
                             <div class="corner_l-t"></div>
@@ -106,6 +111,7 @@
                         </div>
                     </div>
                 </div>
+                <!--
                 <div class="row">
                     <div class="col-md-4 job_listing_container" onclick="openURL('career-apply.html')">
                         <div class="h-100 mr-3 p-5 job_listing">
@@ -220,6 +226,7 @@
                         </div>
                     </div>
                 </div>
+                -->
             </div>
         </section>
         <section id="footer">
@@ -229,18 +236,18 @@
                         <div class="footer_logo">
                             <img src="./img/Footer Logo.png">
                             <div class="text_wrapper">
-                                <p class="content grey-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis aliquam ex. Nunc dapibus accumsan tellus, vitae dictum
-                                    augue pharetra sagittis. Vivamus quis ex leo. Nulla finibus dui ut urna iaculis vehicula.
+                                <p class="content mt-3 grey-text">
+                                    We tinker. We dream. We fall, fail, scrape, crawl and try again until we find the solution we are looking for. 
+                                    Absolute success is always our aim, and informs every decision we make.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <p class="footer_social">
-                            <i class="fab fa-facebook-f"></i>
+                            
                             <i class="fab fa-linkedin-in"></i>
-                            <i class="fab fa-google-plus-g"></i>
+   
                         </p>
                     </div>
                 </div>

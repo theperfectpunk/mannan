@@ -32,7 +32,7 @@
                             <a class="nav-link" href="./index.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT</a>
+                            <a class="nav-link" href="./about.html">ABOUT</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./services.html">SERVICES</a>
@@ -41,7 +41,7 @@
                             <a class="nav-link active" href="#">CAREERS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">BLOG</a>
+                            <a class="nav-link" href="./blog.html">BLOG</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./contact.html">GET IN TOUCH</a>
@@ -52,16 +52,23 @@
         </nav>
         <section id="career_hero">
             <div class="container">
-                <div class="image_card pb-5">
-                    <video class="w-100" autoplay muted loop>
-                        <source src="./media/Career_video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video> 
-                    <div class="scrollme">
-                        <div class="card bg_dark_green shadow text-white ml-5 p-4 float-left animateme" style="width: 24rem; margin-top: -200px; transform: translate3d(0, 50px,0);" data-when="enter" data-from="1" data-to="0" data-opacity="1" data-translatey="50">
-                            <h2 class="card-title text-left">Mission</h2>
-                            <p class="card-text text-left">At Mannan, we use our innate ability to listen deeply for customer-specific, industry wide challenges and technology opportunities - crafting insightful solutions that address these situations, differentiating ourselves from competitors.
-                            </p>
+                <div class="container">
+                    <div class="image_card pb-5">
+                        <div class="position-relative">
+                            <video class="w-100" id="hero_video" loop>
+                                <source src="./media/Career_video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="play_button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="scrollme">
+                            <div class="card bg_dark_green shadow text-white ml-5 p-4 float-left animateme" style="width: 24rem; margin-top: -200px; transform: translate3d(0, 50px,0);" data-when="enter" data-from="1" data-to="0" data-opacity="1" data-translatey="50">
+                                <h2 class="card-title text-left">Mission</h2>
+                                <p class="card-text text-left">At Mannan, we use our innate ability to listen deeply for customer-specific, industry wide challenges and technology opportunities - crafting insightful solutions that address these situations, differentiating ourselves from competitors.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -72,10 +79,68 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="h-100 mr-3 p-5 job_listing">
-                            <h2>Software Developer</h2>
-                            <span class="mr-3"><i class="fas fa-briefcase"></i> 02-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
-                            <p class="content mt-3">At Mannan.ai, we are renowned for our direct, no-nonsense attitude to delivery and this successful approach has enabled us to build our business on the basis of positive referrals from IT leaders. Delivering high quality software output is a key principle embedded into every single member of the Mannan team, ensuring we on-board and retains exceptional talent.
-                                Commitment to do the right thing and be prepared to go the extra mile to make it happen has been the foundation which our family has and will always be stand upon.
+                            <h2 id="job_title">Software Developer - Python/C/C++</h2>
+                            <span id="job_experience" class="mr-3"><i class="fas fa-briefcase"></i> 05-07 Years</span><span><i class="fas fa-map-marker-alt"></i> Delhi (Okhla)</span>
+                            <p id="job_description" class="content mt-3">
+                                    Job Role (in brief)
+                                    <br />
+                                    <br />
+                                        Responsible for Leading and mentoring a small Software development team within a specific task or project, side by side with hands-on development. (Python)
+                                    <br />
+                                    <br />
+                                        What are the Challenges in the Role?
+                                    <br />
+                                    <br />
+                                        Part of our Product research and development team
+                                    <br />
+                                        Proficiency in, at least, two programming language such as Python, C and C++
+                                    <br />
+                                        Solid understanding of Scripting languages ( Python/ Ansible)
+                                    <br />
+                                        OS (Linux) , Hypervisors (KVM, VMWare) .
+                                    <br />
+                                        Sound understanding of Open APIs Socket and protocols, such as Restful.
+                                    <br />
+                                        Knowledge of VLAN, Linux bridges
+                                    <br />
+                                        Hands on knowledge of designing algorithm, problem solving, and complexity analysis
+                                    <br />
+                                        Experience with distributed (multi-tiered) systems and algorithms
+                                    <br />
+                                        Ability to effectively articulate technical challenges and solutions
+                                    <br />
+                                        Deal well with ambiguous/undefined problems; ability to think abstractly
+                                    <br />
+                                        Familiarity with both front end development and backend development
+                                    <br />
+                                    <br />
+                                        Compensation and Benefits:
+                                    <br />
+                                    <br />
+                                        Competitive Salaries + Bonus
+                                    <br />
+                                        Flexible Leaves Program, with Full cover Life &amp; Medical insurance
+                                    <br />
+                                        Work-life-balance (Flexible working hours)
+                                    <br />
+                                        Opportunity to work with some of the brightest talents in the country.
+                                    <br />
+                                        Working on the real technical problems of industry
+                                    <br />
+                                        Freedom to voice your opinions &amp; influence any products direction.
+                                    <br />
+                                        Part of the unique idea oriented product
+                                    <br />
+                                    <br />
+                                        What we are looking in a Perfect Candidate:
+                                    <br />
+                                    <br />
+                                        5-7 Years of development in C, C++ or Python
+                                    <br />
+                                        Quick learner, Team player, Strong drive, Self- starter
+                                    <br />
+                                        Must be good in planning &amp; organizing skills
+                                        
                             </p>
                             <div class="text-left"><button onclick="openURL('careers.html')" class="custom-button"><i class="fas fa-arrow-left"></i> BACK</button></div>
                         </div>
@@ -111,15 +176,15 @@
                             </div>
 
                             <div class="group">      
-                                <input type="text" id="apply_resume" onfocus="uploadCVfocus(this)" required>
+                                <input type="text" data-target="apply_resume" onclick="uploadCVfocus(this)" required>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Resume</label>
                             </div>
+                            <input type="file" style="display: none;" id="apply_resume">
                             
                             <div class="group">      
-                                <input type="text" id="apply_cletter" onfocus="uploadCVfocus(this)" required>
-                                <span class="highlight"></span>
+                                <textarea id="apply_cletter" rows="4" required></textarea>
                                 <span class="bar"></span>
                                 <label>Cover Letter</label>
                             </div>
@@ -129,13 +194,6 @@
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>LinkedIn Profile</label>
-                            </div>
-                            
-                            <div class="group">      
-                                <input type="text" id="apply_cletter" onfocus="uploadCVfocus(this)" required>
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Cover Letter</label>
                             </div>
                             
                             <div class="text-right"><button class="custom-button">SUBMIT APPLICATION</button></div>
@@ -152,17 +210,17 @@
                             <img src="./img/Footer Logo.png">
                             <div class="text_wrapper">
                                 <p class="content">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis aliquam ex. Nunc dapibus accumsan tellus, vitae dictum
-                                    augue pharetra sagittis. Vivamus quis ex leo. Nulla finibus dui ut urna iaculis vehicula.
+                                    We tinker. We dream. We fall, fail, scrape, crawl and try again until we find the solution we are looking for. 
+                                    Absolute success is always our aim, and informs every decision we make.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <p class="footer_social">
-                            <i class="fab fa-facebook-f"></i>
+                            
                             <i class="fab fa-linkedin-in"></i>
-                            <i class="fab fa-google-plus-g"></i>
+   
                         </p>
                     </div>
                 </div>
@@ -181,7 +239,7 @@
     <script src="./bower_components/parallax.js/parallax.min.js"></script>
     <script src="./js/jquery.scrollme.min.js"></script>
     <script src="./js/smoothscroll.min.js"></script>
-    <script src="./js/career-script.js"></script>
+    <script src="./js/career-apply-script.js"></script>
     <script src="./js/all.js"></script>
 
 </html>

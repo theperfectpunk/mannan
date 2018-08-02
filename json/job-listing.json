@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Software Developer - Python/C/C++",
+        "experience": "05-07",
+        "description": "<p><strong>Job Role (in brief)</strong><br /> <br /> Responsible for Leading and mentoring a small Software development team within a specific task or project, side by side with hands-on development. (Python)<br /> <br /> <strong>What are the Challenges in the Role?</strong><br /> <br /> Part of our Product research and development team<br /> Proficiency in, at least, two programming language such as Python, C and C++<br /> Solid understanding of Scripting languages ( Python/ Ansible) <br /> OS (Linux) , Hypervisors (KVM, VMWare) . <br /> Sound understanding of Open APIs Socket and protocols, such as Restful. <br /> Knowledge of VLAN, Linux bridges <br /> Hands on knowledge of designing algorithm, problem solving, and complexity analysis<br /> Experience with distributed (multi-tiered) systems and algorithms<br /> Ability to effectively articulate technical challenges and solutions<br /> Deal well with ambiguous/undefined problems; ability to think abstractly<br /> Familiarity with both front end development and backend development"
+    },
+    {
+        "name": "PHP Developer",
+        "experience": "03-05",
+        "description": "<p><strong>Job Role (in brief)</strong><br /><br /> We are looking for a PHP Developer responsible for managing back-end services and the interchange of data between the server and the users. Your primary focus will be the development of all server-side logic, definition and maintenance of the central database, and ensuring high performance and responsiveness to requests from the front-end. You will also be responsible for integrating the front-end elements built by your co-workers into the application. Therefore, a basic understanding of front-end technologies is necessary as well.<br /><br /> <strong>What we are looking in a Perfect Candidate:</strong><br /><br /> Core PHP, HTML5, CSS3, Java Script, JQuery, Bootstrap, Ajax, Advance PHP<br /> DBMS and RDBMS MySQL<br /> Web Server: Apache, Tomcat<br /> Web Services: AWS, Google API <br /> Working knowledge on Python &amp; Linux <br /> Quick learner, Team player, Strong drive, Self- starter<br /> Must be good in planning &amp; organizing skills<br /> Experience 3 to 5 Years<br /> Qualification: B.Tech (CS/IT)</p>"
+    },
+    {
+        "name": "Software Testing - Home Automation",
+        "experience": "00-05",
+        "description": "<strong><br /> Key Responsibilities and Expectations:&nbsp;</strong><ul><li>Strong understanding of s/w testing and QA concepts</li><li>Understand business and technical requirements and prepare test cases / test plan from the same</li><li>Good verbal and written English communication</li><li>Must know <strong> JAVA</strong> programming language (additional knowledge <strong> Python</strong> is an added advantage)</li><li>Should be able to perform mobile (iOS) application testing procedures and methodologies</li><li>Must have API testing knowledge</li><li>Add to our companys performance and scalability testing efforts and improve the test frameworks, tools and technologies used by the organization to maintain a high-quality bar.</li><li>Should be able to log and track bugs in JIRA</li><li>Ability to work across Windows, Linux is a plus.</li><li>Exposure to mobile test automation is a big plus</li><li>Should be able to communicate effectively with development team.</li></ul>"
+    }
+]

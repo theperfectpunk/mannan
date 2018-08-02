@@ -1,8 +1,16 @@
 $(document).ready(function () {
 
-    $('.job_listing_container').click(function () {
-        
+    $('.play_button').click(function () {
+        var target = this.previousElementSibling;
+        if(target.paused == true) {
+            target.play();
+            this.style.opacity = 0;
+        } else {
+            target.pause();
+            this.style.opacity = 0.6;
+        }
     })
+
     /*Array.prototype.forEach.call(document.getElementsByClassName('apply_button'), function (element) {
         element.addEventListener("click", function () {
             document.getElementById('animate-height').firstElementChild.firstElementChild.innerHTML = this.parentElement.parentElement.firstElementChild.innerText;
@@ -17,14 +25,6 @@ $(document).ready(function () {
     });*/
 
 })
-
-function uploadCVfocus(that) {
-    console.log(that)
-    /*var resume = document.getElementById('resume')
-    resume.click();
-    console.log(resume.files[0].name);
-    document.getElementById('resume_label').value = resume.files[0].name;*/
-}
 
 /*function show_apply_form () {
     document.getElementById('resume_form_card').style.opacity = 1;
