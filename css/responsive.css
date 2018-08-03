@@ -2,6 +2,51 @@
     .ott_title_left {
         width: 100%;
     }
+    .scrollme .card {
+        width: 90%;
+        margin-top: -25vh;
+        transform: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .right_trust .row .col-md-3 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .right_trust .row .col-md-9 {
+        text-align: center;
+    }
+
+    .automation_subheading {
+        border: none;
+    }
+
+    #career_hero .container .image_card .scrollme .card {
+        margin-top: 0;
+    }
+
+    nav {
+        min-height: auto;
+    }
+    .footer_social {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .nav-item.active > a.nav-link {
+        display: inline;
+        padding-bottom: 0.2rem;
+    }
+
+    .footer_logo {
+        overflow: hidden;
+    }
+
+    .footer_logo img {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
