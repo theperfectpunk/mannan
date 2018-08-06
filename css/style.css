@@ -160,6 +160,11 @@ section {
     transform: translate3d(0,50px,0);
 }
 
+.mobile_services_caption_container {
+    position: absolute;
+    display: none;
+}
+
 /**********About Us**********/
 
 #about_us .container {
