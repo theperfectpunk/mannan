@@ -85,6 +85,10 @@ section {
     height: 100vh;
 }
 
+.video-hero img {
+    display: none;
+}
+
 .video-hero video {
     display: block;
     object-fit: fill;
@@ -387,7 +391,11 @@ section {
     color: #fff;
     display: flex;
     background-color: #000;
+}
+
+.footer_text p {
     line-height: 50px;
+    margin-bottom: auto;
 }
 
 .footer_text:nth-child(1) {

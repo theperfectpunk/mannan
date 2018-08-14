@@ -3,9 +3,25 @@ function uploadCVfocus(that) {
     console.log(that);
     var resume = document.getElementById(that.dataset.target)
     resume.click();
-    console.log(resume.files[0].name);
-    that.value = resume.files[0].name;
+    $(resume).change(function () {
+        console.log(resume.files[0].name);
+        that.value = resume.files[0].name;
+    })
 }
+
+$('form').submit(function (e) {
+    e.preventDefault();
+    var formData = new FormData();
+    formData.append('apply_name', document.getElementById('apply_name').value);
+    formData.append('apply_cname', document.getElementById('apply_cname').value);
+    formData.append('apply_phone', document.getElementById('apply_phone').value);
+    formData.append('apply_resume', document.getElementById('apply_resume').files[0]);
+    formData.append('apply_cletter', document.getElementById('apply_cletter').value);
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "/mannan/php/apply.php", true);
+    xhttp.setRequestHeader("Content-type", "multipart/form-data");
+    xhttp.send(formData);
+})
 
 $(document).ready(function () {
     var job_num = getURLParameter('job')-1;

@@ -29,10 +29,14 @@ $(document).ready(function () {
     $('#caption_heading').typed(options);
 
 })
-
+var subtract;
 function bodyScroll () {
     scrollPos = $(window).scrollTop();
-    viewportheightoffset = $(window).height() - 700;
+    if($(window).width()<768)
+        subtract = 200;
+    else
+        subtract = 700;
+    viewportheightoffset = $(window).height() - subtract;
     opacity = scrollPos/viewportheightoffset
     $('.video-hero').css("opacity", 1 - scrollPos/viewportheightoffset);
     if(scrollPos > 10) {

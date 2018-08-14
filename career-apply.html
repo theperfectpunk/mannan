@@ -154,7 +154,7 @@
                     </div>
                     <div class="col-md-8 p-5 bg_white">
                         <h5>Thak you for considering a career at Mannan. Your application has been received. If we see a fit, our Talent Acquisition team will be in touch.</h5>
-                        <form id="apply_form" class="mt-5">
+                        <form id="apply_form" enctype="multipart/form-data" action="php/apply.php" method="post" class="mt-5">
                             <div class="group">      
                                 <input type="text" id="apply_name" required>
                                 <span class="highlight"></span>
@@ -197,7 +197,7 @@
                                 <label>LinkedIn Profile</label>
                             </div>
                             
-                            <div class="text-md-right text-sm-center"><button class="custom-button">SUBMIT APPLICATION</button></div>
+                            <div class="text-md-right text-sm-center"><button type="submit" class="custom-button">SUBMIT APPLICATION</button></div>
                         </form>
                     </div>
                 </div>
