@@ -1,6 +1,11 @@
 var scrollTopFlag = false;
+var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/)
 function initScroll(){
-	new SmoothScroll(document,120,12)
+	//console.log("smooth scroll disabled");
+	if(!isSafari) {
+		new SmoothScroll(document,120,12);
+	}
+	
 }
 
 function openURL(URL) {

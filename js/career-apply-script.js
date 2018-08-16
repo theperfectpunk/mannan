@@ -34,6 +34,9 @@ $('form').submit(function (e) {
 })
 
 $(document).ready(function () {
+    //load video in safari
+    document.getElementById('hero_video').load();
+
     var job_num = getURLParameter('job')-1;
     $.getJSON( "/mannan/json/job-listing.json", function (data) {
         document.getElementById('job_title').innerText = data[job_num].name;

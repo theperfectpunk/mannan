@@ -3,7 +3,7 @@ var scrollPos;
 
 $(document).ready(function () {
     //alert('page loaded');
-    console.log($(window).scrollTop());
+    $('.video-hero video')[0].play();
     /*$(window).scroll(function (event) {
         console.log(event.pageY);
         if(event.originalEvent.pageY>908) {
@@ -35,9 +35,9 @@ function bodyScroll () {
     if($(window).width()<768)
         subtract = 200;
     else
-        subtract = 700;
+        subtract = $(window).height() - 200;
     viewportheightoffset = $(window).height() - subtract;
-    opacity = scrollPos/viewportheightoffset
+    opacity = scrollPos/viewportheightoffset;
     $('.video-hero').css("opacity", 1 - scrollPos/viewportheightoffset);
     if(scrollPos > 10) {
         //document.getElementById('mannan_svg').firstElementChild.style.width = "100vw"
