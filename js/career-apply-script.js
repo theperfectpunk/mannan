@@ -17,10 +17,20 @@ $('form').submit(function (e) {
     formData.append('apply_phone', document.getElementById('apply_phone').value);
     formData.append('apply_resume', document.getElementById('apply_resume').files[0]);
     formData.append('apply_cletter', document.getElementById('apply_cletter').value);
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "/mannan/php/apply.php", true);
-    xhttp.setRequestHeader("Content-type", "multipart/form-data");
-    xhttp.send(formData);
+    $.ajax({
+        method: "POST",
+        url: "./php/apply.php",
+        data: formData,
+        cache: false,
+        contentType: false,
+        processData: false,
+        success: function (data) {
+            alert(data)
+        },
+        error: function (xhr, status, error) {
+            alert(xhr.responseText);
+        }
+    });
 })
 
 $(document).ready(function () {
