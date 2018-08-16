@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+    //load video in safari
+    document.getElementById('hero_video').load();
+
     $('.play_button').click(function () {
         var target = this.previousElementSibling;
         if(target.paused == true) {
