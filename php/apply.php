@@ -1,6 +1,4 @@
 <?php
-$request_body = file_get_contents('php://input');
-echo $request_body;
 if(!$_POST) exit;
 
 // Email address verification, do not edit.
@@ -10,6 +8,7 @@ function isEmail($email) {
 
 if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
+$job_title= $_POST['apply_profile'];
 $name     = $_POST['apply_name'];
 $cname	  = $_POST['apply_cname'];
 $resume   = $_FILES['apply_resume'];
@@ -17,12 +16,12 @@ $phone	  = $_POST['apply_phone'];
 $cletter  = $_POST['apply_cletter'];
 $linkedinprofile = $_POST['apply_lprofile'];
 
-echo "hello";
-/*
+copy($resume["tmp_name"], getcwd()."/upload/".$resume["name"]);
+
 if(trim($name) == '') {
 	echo '<div class="error_message">Enter your name.</div>';
 	exit();
-} else if(trim($resume) == '') {
+} else if(trim($resume["name"]) == '') {
 	echo '<div class="error_message">Please upload your resume.</div>';
 	exit();
 }
@@ -54,7 +53,7 @@ $address = "mohit.tokas@mannan.ai";
 
 // Example, $e_subject = '$name . ' has contacted you via Your Website.';
 
-$e_subject = 'Job application for the post ' . $name . '.';
+$e_subject = 'Job application for the post : ' . $job_title . '.';
 
 
 // Configuration option.
@@ -63,7 +62,7 @@ $e_subject = 'Job application for the post ' . $name . '.';
 
 $e_body = "You have been contacted by: $name" . PHP_EOL . PHP_EOL;
 $e_reply = "E-mail: $email";
-$e_content =  "Company Name: $cname" . PHP_EOL . "Phone: $phone" . PHP_EOL . "Message:\r\n$message" . PHP_EOL;
+$e_content =  "Company Name: $cname" . PHP_EOL . "Phone: $phone" . PHP_EOL . "Cover Letter :\r\n$cletter" . PHP_EOL . "Resume : http://www.mannan.ai/php/upload/" . str_replace(' ', '%20', $resume["name"]) . PHP_EOL . "LinkedIn Profile : $linkedinprofile";
 $from = "info@mannan.ai";
 
 
@@ -93,4 +92,4 @@ if(mail($address, $e_subject, $msg, $headers)) {
 	echo 'Sorry Mail Server Not Responding!';
 
 }
-*/
+?>

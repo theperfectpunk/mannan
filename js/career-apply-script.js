@@ -12,11 +12,13 @@ function uploadCVfocus(that) {
 $('form').submit(function (e) {
     e.preventDefault();
     var formData = new FormData();
+    formData.append('apply_profile', document.getElementById('job_title').innerText)
     formData.append('apply_name', document.getElementById('apply_name').value);
     formData.append('apply_cname', document.getElementById('apply_cname').value);
     formData.append('apply_phone', document.getElementById('apply_phone').value);
     formData.append('apply_resume', document.getElementById('apply_resume').files[0]);
     formData.append('apply_cletter', document.getElementById('apply_cletter').value);
+    formData.append('apply_lprofile', document.getElementById('apply_lprofile').value);
     $.ajax({
         method: "POST",
         url: "./php/apply.php",
