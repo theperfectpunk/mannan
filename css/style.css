@@ -307,11 +307,6 @@ section {
     opacity: 0.1;
 }
 
-.services_tiles .col-md-2 > .services_image_container {
-    width: 100%;
-    height: auto;
-}
-
 /*.services_tiles .col-md-2:hover:nth-child(odd), .services_grid > .services_inner_container:hover:nth-child(odd) {
     background-color: #4FCDDD !important;
     cursor: pointer;
