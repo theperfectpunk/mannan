@@ -34,7 +34,6 @@ function SmoothScroll(target, speed, smooth) {
 	//target.addEventListener('DOMMouseScroll', scrolled, false)
 
 	function scrolled(e) {
-		e.preventDefault(); // disable default scrolling
 		var delta = e.delta || e.wheelDelta;
 		if (delta === undefined) {
 			//we are on firefox
