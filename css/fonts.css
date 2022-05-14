@@ -1,29 +1,35 @@
 @font-face {
     font-family: BinaryITC;
+    font-display: swap;
     src: url(../fonts/BinaryITC.ttf);
 }
 
 @font-face {
     font-family: BinaryITCBold;
+    font-display: swap;
     src: url(../fonts/BinaryITCBold.ttf);
 }
 
 @font-face {
     font-family: OpenSans;
+    font-display: swap;
     src: url(../fonts/OpenSans-Regular.ttf);
 }
 
 @font-face {
     font-family: OpenSansLight;
+    font-display: swap;
     src: url(../fonts/OpenSans-Light.ttf)
 }
 
 @font-face {
     font-family: OpenSansSemiBold;
+    font-display: swap;
     src: url(../fonts/OpenSans-SemiBold.ttf);
 }
 
 @font-face {
     font-family: OpenSansBold;
+    font-display: swap;
     src: url(../fonts/OpenSans-Bold.ttf)
 }
