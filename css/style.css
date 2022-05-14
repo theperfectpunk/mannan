@@ -17,6 +17,16 @@ nav {
     min-height: 81px;
 }
 
+.navbar-collapse.collapsing, .navbar-collapse.collapse.show {
+    background: #FFFFFF;
+    padding: 15px;
+}
+
+.navbar-collapse.collapsing .navbar-nav .nav-item .nav-link,
+.navbar-collapse.collapse.show .navbar-nav .nav-item .nav-link {
+    color: #1C1C1C;
+}
+
 .parallax-images {
     min-height: 60vh;
     background: transparent;
@@ -295,6 +305,11 @@ section {
 .services_tiles .col-md-2:hover > .services_image_container {
     transform: none;
     opacity: 0.1;
+}
+
+.services_tiles .col-md-2 > .services_image_container {
+    width: 100%;
+    height: auto;
 }
 
 /*.services_tiles .col-md-2:hover:nth-child(odd), .services_grid > .services_inner_container:hover:nth-child(odd) {
